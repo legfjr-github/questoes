@@ -1,4 +1,4 @@
-# app.py (Versão Corrigida)
+# app.py
 import streamlit as st
 from db_manager import DBManager
 import time
@@ -7,7 +7,7 @@ import os
 import sqlite3
 import re
 
-# --- Configurações Iniciais e Funções (sem mudanças) ---
+# --- Configurações Iniciais ---
 st.set_page_config(layout="wide", page_title="Concurseiro Pro")
 DB_FILE, CSV_FILE, USER_ID = "concurso.db", "questoes.csv", "Concurseiro"
 @st.cache_resource
@@ -23,7 +23,7 @@ def initialize_app():
             updated_db = get_db_manager()
             count_after = updated_db.get_summary(USER_ID)['total_questions']
             if count_after > count_before: st.toast(message, icon="✔️")
-            else: st.toast("Banco de dados já está atualizado.", icon="ℹ️")
+            else: st.toast("Banco de dados já atualizado.", icon="ℹ️")
         st.session_state.app_initialized = True
 
 def initialize_session_state():
@@ -46,7 +46,6 @@ def start_quiz(disciplines=None, topics=None, mode=None, review_mode=False, weak
         st.session_state.current_page = "quiz"; st.session_state.quiz_started = True; st.session_state.current_question_index = 0
         st.session_state.show_answer = False; st.session_state.start_time = time.time(); st.rerun()
 
-# --- MUDANÇA APENAS AQUI ---
 def home_page():
     st.title("📚 Concurseiro Pro: Início")
     if not os.path.exists(CSV_FILE): st.error(f"'{CSV_FILE}' não encontrado!", icon="🚨"); st.warning(f"Crie um arquivo `{CSV_FILE}` com 11 colunas."); return
@@ -56,23 +55,15 @@ def home_page():
     
     st.subheader("Resumo Geral")
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Total", summary["total_questions"])
-    col2.metric("Respondidas", summary["answered_questions"])
-    col3.metric("Acertos", summary["correct_answers"])
-    col4.metric("Erros", summary["wrong_answers"])
+    col1.metric("Total", summary["total_questions"]); col2.metric("Respondidas", summary["answered_questions"]); col3.metric("Acertos", summary["correct_answers"]); col4.metric("Erros", summary["wrong_answers"])
     
     st.divider()
     st.subheader("🧠 Sugestão de Estudo")
     weakest_topics = db.get_weakest_topics(USER_ID, top_n=5)
-    
     if weakest_topics:
         st.warning("Assuntos a melhorar (com base nos erros):")
-        
-        # ### CORREÇÃO DO BUG ###
-        # Trocamos a "list comprehension" por um loop 'for' padrão.
         for rec in weakest_topics:
             st.markdown(f"- **{rec['topic']}** ({rec['discipline']})")
-        
         if st.button("Revisar esses assuntos", type="primary"): 
             start_quiz(review_mode=True, weakest_topics=weakest_topics)
     else: 
@@ -81,11 +72,49 @@ def home_page():
     st.divider()
     with st.form("filter_form"):
         st.subheader("Iniciar Nova Sessão")
-        disciplines = st.multiselect("Disciplinas", options=db.get_all_disciplines())
-        topics = st.multiselect("Assuntos", options=db.get_all_topics())
+        disciplines = st.multiselect("Disciplinas", options=db.get_all_disciplines()); topics = st.multiselect("Assuntos", options=db.get_all_topics())
         mode = st.radio("Modo:", options=["random", "unanswered", "wrong", "correct"], format_func=lambda x: {"random": "Aleatório", "unanswered": "Nunca respondi", "wrong": "Que já errei", "correct": "Que já acertei"}[x], horizontal=True)
         if st.form_submit_button("Começar Sessão", use_container_width=True): 
             start_quiz(disciplines=disciplines, topics=topics, mode=mode)
+
+    # --- NOVA SEÇÃO DE BACKUP E RESTAURAÇÃO ---
+    st.divider()
+    with st.expander("⚙️ Backup e Restauração de Dados"):
+        st.subheader("Backup (Exportar)")
+        st.info("Clique no botão abaixo para baixar o arquivo do banco de dados (`concurso.db`), que contém todas as suas questões e seu histórico de respostas.")
+        
+        try:
+            with open(DB_FILE, "rb") as fp:
+                st.download_button(
+                    label="Baixar Backup do Banco de Dados",
+                    data=fp,
+                    file_name="concurso_backup.db",
+                    mime="application/octet-stream"
+                )
+        except FileNotFoundError:
+            st.warning("O banco de dados ainda não foi criado. Responda pelo menos uma questão primeiro.")
+
+        st.subheader("Restauração (Importar)")
+        st.warning("🚨 **Atenção:** Fazer o upload de um backup irá **substituir permanentemente** todos os seus dados atuais (questões e histórico). Faça isso apenas se tiver certeza.")
+        
+        uploaded_db = st.file_uploader(
+            "Selecione um arquivo de backup (.db) para restaurar",
+            type="db"
+        )
+        
+        if uploaded_db is not None:
+            # Pega os bytes do arquivo enviado
+            backup_bytes = uploaded_db.getvalue()
+            
+            # Escreve os bytes por cima do arquivo de banco de dados atual
+            with open(DB_FILE, "wb") as f:
+                f.write(backup_bytes)
+            
+            # Limpa todos os caches e reinicia o app para carregar o novo DB
+            st.cache_resource.clear()
+            st.success("Backup restaurado com sucesso! A página será recarregada com os novos dados.")
+            time.sleep(2) # Pausa para o usuário ler a mensagem
+            st.rerun()
 
 def statistics_page():
     # ... (sem mudanças)
