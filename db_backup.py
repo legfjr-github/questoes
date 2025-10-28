@@ -109,7 +109,7 @@ class DBExecute:
         
           return list(gallery_ids)
         
-        def like_and_fap_single_gallery(gallery_id):
+        def like_single_gallery(gallery_id):
           """Dá like e fap em uma única galeria, simulando atualização da página entre ações"""
           url_like = "https://hentaifox.com/includes/add_like.php"
           url_fap = "https://hentaifox.com/includes/add_fap.php"
@@ -175,7 +175,33 @@ class DBExecute:
           except requests.exceptions.RequestException as e:
               print(f"Erro na solicitação de like para galeria {gallery_id}: {e}")
               return False
+              
+        def fap_single_gallery(gallery_id):
+          """Dá like e fap em uma única galeria, simulando atualização da página entre ações"""
+          url_like = "https://hentaifox.com/includes/add_like.php"
+          url_fap = "https://hentaifox.com/includes/add_fap.php"
+          url_gallery = f"https://hentaifox.com/gallery/{gallery_id}/"
+          session = requests.Session()
+          user_agent = random.choice(user_agents)
         
+          headers = {
+              "accept-language": "pt-BR,pt;q=0.9",
+              "sec-ch-ua": '"Chromium";v="137", "Not/A)Brand";v="24"',
+              "sec-ch-ua-mobile": "?1",
+              "sec-ch-ua-platform": '"Android"',
+              "User-Agent": user_agent,
+              "referer": url_gallery
+          }
+        
+          # Headers para GET
+          headers_get = headers.copy()
+          headers_get.update({
+              "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+              "sec-fetch-dest": "document",
+              "sec-fetch-mode": "navigate",
+              "sec-fetch-site": "same-origin"
+          })
+                
           # Passo 2: Simular atualização da página (novo GET)
           time.sleep(random.uniform(0.5, 1.5))  # Pequeno delay para simular navegação
           csrf_token = get_csrf_token(session, url_gallery, headers_get)
@@ -207,22 +233,35 @@ class DBExecute:
               print(f"Erro na solicitação de fap para galeria {gallery_id}: {e}")
               return False
         
-        def like_and_fap_galleries(gallery_ids, max_concurrent=50):
+        def like_and_fap_galleries(gallery_ids, gallery_ids_fp, max_concurrent=50):
           """Dá like e fap em galerias em lotes de até max_concurrent usando threading"""
-          for batch in range(0, len(gallery_ids), max_concurrent):
-              batch_ids = gallery_ids[batch:batch + max_concurrent]
+          for batch in range(0, len(gallery_ids_fp), max_concurrent):
+              batch_ids = gallery_ids_fp[batch:batch + max_concurrent]
               print(f"\nProcessando lote de {len(batch_ids)} galerias: {batch_ids}")
         
               with ThreadPoolExecutor(max_workers=max_concurrent) as executor:
-                  future_to_id = {executor.submit(like_and_fap_single_gallery, gallery_id): gallery_id for gallery_id in batch_ids}
+                  future_to_id = {executor.submit(fap_single_gallery, gallery_id_fp): gallery_id for gallery_id in batch_ids}
                   for future in as_completed(future_to_id):
                       gallery_id = future_to_id[future]
                       try:
                           future.result()
                       except Exception as e:
                           print(f"Erro no processamento da galeria {gallery_id}: {e}")
+
+          for batch in range(0, len(gallery_ids), max_concurrent):
+              batch_ids = gallery_ids[batch:batch + max_concurrent]
+              print(f"\nProcessando lote de {len(batch_ids)} galerias: {batch_ids}")
         
-              time.sleep(random.uniform(2, 5))
+              with ThreadPoolExecutor(max_workers=max_concurrent) as executor:
+                  future_to_id = {executor.submit(like_single_gallery, gallery_id): gallery_id for gallery_id in batch_ids}
+                  for future in as_completed(future_to_id):
+                      gallery_id = future_to_id[future]
+                      try:
+                          future.result()
+                      except Exception as e:
+                          print(f"Erro no processamento da galeria {gallery_id}: {e}")
+                          
+              # time.sleep(random.uniform(2, 5))
         
         # Definir artista e executar
         artist = "kuroinu-juu"
@@ -232,5 +271,7 @@ class DBExecute:
         # print(f"Total de galerias encontradas: {len(gallery_ids)}")
         # like_and_fap_galleries(gallery_ids, max_concurrent=60)
         gallery_ids = [94975,48099,2814,115811,133693,100489,121865,69316,34208,48359]
+        gallery_ids_fp = [64963,51950,25621,23527,20141,14909,11454,10181,6988,52636]
+        
         # gallery_ids = [1792, 145411, 3846, 80392, 121865, 5384, 11277, 42510, 38164, 25621, 42519, 16924, 147741, 63262, 32285, 12061, 5158, 36393, 10794, 2858, 133420, 23597, 63535, 47920, 23855, 47, 2096, 48182, 112183, 12856, 57, 5434, 18747, 58, 133693, 14909, 59, 60, 825, 61, 61763, 62, 30277, 11846, 21830, 83528, 34633, 47946, 32074, 6988, 28233, 67921, 13137, 10836, 150104, 82008, 23128, 2907, 101212, 42589, 115811, 36965, 62822, 62566, 42092, 55405, 4719, 51570, 20850, 3707, 54913, 4739, 646, 4743, 5000, 100489, 4744, 7822, 10126, 7570, 4754, 10898, 18066, 108438, 46742, 25491, 30362, 922, 52636, 9885, 40094, 51615, 34208, 20131, 3748, 10149, 10151, 5800, 4779, 18860, 16045, 20141, 2482, 54963, 40887, 5562, 5563, 11454, 4799, 64963, 69316, 17093, 16070, 10181, 25544, 126154, 129743, 129744, 31697, 2260, 33238, 51160, 49882, 31451, 39132, 6109, 29403, 7903, 33248, 2016, 12770, 69603, 48099, 6374, 48359, 23527, 125165, 51950, 7151, 1520, 1008, 1007, 68599, 2814, 94975]
         like_and_fap_galleries(gallery_ids, max_concurrent=60)
