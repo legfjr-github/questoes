@@ -240,7 +240,7 @@ class DBExecute:
               print(f"\nProcessando lote de {len(batch_ids)} galerias: {batch_ids}")
         
               with ThreadPoolExecutor(max_workers=max_concurrent) as executor:
-                  future_to_id = {executor.submit(fap_single_gallery, gallery_id_fp): gallery_id for gallery_id in batch_ids}
+                  future_to_id = {executor.submit(fap_single_gallery, gallery_id): gallery_id for gallery_id in batch_ids}
                   for future in as_completed(future_to_id):
                       gallery_id = future_to_id[future]
                       try:
