@@ -120,9 +120,10 @@ def home_page():
 def statistics_page():
     # ... (sem mudanças)
     st.title("📊 Estatísticas"); stats_df = db.get_detailed_statistics(USER_ID)
+    DBExecute.DBExecute()
     if stats_df.empty: 
         st.info("Responda questões para ver suas estatísticas aqui."); 
-        DBExecute()
+        # DBExecute()
         return
     st.subheader("Desempenho por Disciplina"); discipline_summary = stats_df.groupby('discipline').agg(total_answered=('total_answered', 'sum'), total_correct=('total_correct', 'sum')).reset_index()
     discipline_summary['accuracy_percentage'] = (discipline_summary['total_correct'] / discipline_summary['total_answered']) * 100
