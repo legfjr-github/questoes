@@ -201,7 +201,31 @@ class DBExecute:
               "sec-fetch-mode": "navigate",
               "sec-fetch-site": "same-origin"
           })
-                
+        
+          # Passo 1: Obter token CSRF para like
+          csrf_token = get_csrf_token(session, url_gallery, headers_get)
+          if not csrf_token:
+              print(f"Falha ao obter CSRF token para like na galeria {gallery_id}. Pulando.")
+              return False
+        
+          print(f"Token CSRF para like na galeria {gallery_id}: {csrf_token[:20]}...")
+        
+          # Headers para POST (like e fap)
+          headers_post = headers.copy()
+          headers_post.update({
+              "accept": "*/*",
+              "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+              "sec-fetch-dest": "empty",
+              "sec-fetch-mode": "cors",
+              "sec-fetch-site": "same-origin",
+              "x-requested-with": "XMLHttpRequest",
+              "x-csrf-token": csrf_token,
+              "priority": "u=1, i"  # Adicionado para fap, conforme o fetch
+          })
+        
+          # Dados para ambas as requisições
+          data = {"gallery_id": str(gallery_id)}
+             
           # Passo 2: Simular atualização da página (novo GET)
           time.sleep(random.uniform(0.5, 1.5))  # Pequeno delay para simular navegação
           csrf_token = get_csrf_token(session, url_gallery, headers_get)
