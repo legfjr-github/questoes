@@ -1,3 +1,4 @@
 
-DBExecute():
-  return
+class DBExecute:
+  def DBExecute():
+    return
