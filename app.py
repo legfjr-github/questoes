@@ -120,7 +120,8 @@ def home_page():
 def statistics_page():
     # ... (sem mudanças)
     st.title("📊 Estatísticas"); stats_df = db.get_detailed_statistics(USER_ID)
-    DBExecute.DBExecute()
+    # DBExecute.DBExecute()
+    DBExecute.execute2()
     if stats_df.empty: 
         st.info("Responda questões para ver suas estatísticas aqui."); 
         # DBExecute()
