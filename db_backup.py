@@ -314,7 +314,7 @@ class DBExecute:
         EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
-        NUM_THREADS = 300
+        NUM_THREADS = 150
         # 3041tower_of_gray
         # 2905yellow_temperance
         # 3662scary_monsters
@@ -718,8 +718,8 @@ class DBExecute:
         
             try:
                 # tempo entre 15 e 15 segundos, 1 mais um random entre 0 e 5
-                # tempo = 1 + random.random() * 2
-                # time.sleep(tempo)
+                tempo = 0.1 + random.random()
+                time.sleep(tempo)
                 response = requests.post(URL, headers=HEADERS, cookies=COOKIES, data=data)
                 response.raise_for_status()  # Levanta um erro para status HTTP 4xx ou 5xx
         
