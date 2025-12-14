@@ -308,10 +308,10 @@ class DBExecute:
         
         # --- CONFIGURAÇÕES DO SCRIPT ---
         # 1. Defina o número TOTAL de requisições que você quer enviar
-        TOTAL_REQUESTS = 15000 #entre 1000 e 7000
-        MULTIPLIER = 3000
-        EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799']
-        EXTRA_UP2 = ['2169','2815','3799','4195','3252']
+        TOTAL_REQUESTS = 150 #entre 1000 e 7000
+        MULTIPLIER = 30
+        EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
         NUM_THREADS = 250
@@ -324,75 +324,81 @@ class DBExecute:
         # 3685 burning_down_the_house
         # 3654 in_a_silent_way
         ALVOS = [
-            # {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},
-            # {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
-            # {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
-            # {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
-            # {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
-            # {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
-            # {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
-            # {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
-            # {'mid': '3041', 'vote': 'up', 'slug': 'tower_of_gray'},
-            # {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
-            # {'mid': '48973', 'vote': 'up', 'slug': 'hypnotism_is_just_make_believe'},
-            # {'mid': '3648', 'vote': 'up', 'slug': 'aqua_necklace'},
-            # {'mid': '3685', 'vote': 'up', 'slug': 'burning_down_the_house'},
-            # {'mid': '3654', 'vote': 'up', 'slug': 'in_a_silent_way'},
-            # {'mid': '26602', 'vote': 'up', 'slug': 'love_triangle_z'},#ano_hi_no_tegomesan
-            # {'mid': '13486', 'vote': 'up', 'slug': 'ano_hi_no_tegomesan'},
-            # {'mid': '7639', 'vote': 'up', 'slug': 'another_one_bite_the_dust'},
-            # {'mid': '3650', 'vote': 'up', 'slug': 'cream_starter'},
-            # {'mid': '33288', 'vote': 'up', 'slug': 'flirtation_sped_forward'},
-            # {'mid': '13234', 'vote': 'up', 'slug': 'game_of_lust'},
-            # {'mid': '2718', 'vote': 'up', 'slug': 'sailor_moon_gold_experience'},
-            # {'mid': '3486', 'vote': 'up', 'slug': 'hierophant_green'},
-            # {'mid': '63520', 'vote': 'up', 'slug': 'just_for_tonight_ill_be_your_bitch'},
-            # {'mid': '19443', 'vote': 'up', 'slug': 'kayoubi_no_yurameki'},
-            # {'mid': '14074', 'vote': 'up', 'slug': 'magicians_red'},
-            # {'mid': '3655', 'vote': 'up', 'slug': 'killer_queen'},
-            # {'mid': '3017', 'vote': 'up', 'slug': 'diver_down'},
-            # {'mid': '40339', 'vote': 'up', 'slug': 'oasis_kuroinu_juu'},
-            # {'mid': '22442', 'vote': 'up', 'slug': 'ojisan_to_futarikiri'},
-            # {'mid': '3722', 'vote': 'up', 'slug': 'red_hot_chili_peppers'},
-            # {'mid': '3036', 'vote': 'up', 'slug': 'sheer_heart_attack'},
-            # {'mid': '3665', 'vote': 'up', 'slug': 'sky_high'},
-            # {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
-            # {'mid': '8040', 'vote': 'up', 'slug': 'submission_super_moon'},
-            # {'mid': '3671', 'vote': 'up', 'slug': 'superfly'},
-            # {'mid': '33063', 'vote': 'up', 'slug': 'tohth'},
+            {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
+            {'mid': '41278', 'vote': 'up', 'slug': 'horny_isekai_elfs_evil_eye'},
+            {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+            {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
+            {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
+            
+            {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},
+            {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
+            {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
+            {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
+            {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
+            {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
+            {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
+            {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
+            {'mid': '3041', 'vote': 'up', 'slug': 'tower_of_gray'},
+            {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
+            {'mid': '48973', 'vote': 'up', 'slug': 'hypnotism_is_just_make_believe'},
+            {'mid': '3648', 'vote': 'up', 'slug': 'aqua_necklace'},
+            {'mid': '3685', 'vote': 'up', 'slug': 'burning_down_the_house'},
+            {'mid': '3654', 'vote': 'up', 'slug': 'in_a_silent_way'},
+            {'mid': '26602', 'vote': 'up', 'slug': 'love_triangle_z'},#ano_hi_no_tegomesan
+            {'mid': '13486', 'vote': 'up', 'slug': 'ano_hi_no_tegomesan'},
+            {'mid': '7639', 'vote': 'up', 'slug': 'another_one_bite_the_dust'},
+            {'mid': '3650', 'vote': 'up', 'slug': 'cream_starter'},
+            {'mid': '33288', 'vote': 'up', 'slug': 'flirtation_sped_forward'},
+            {'mid': '13234', 'vote': 'up', 'slug': 'game_of_lust'},
+            {'mid': '2718', 'vote': 'up', 'slug': 'sailor_moon_gold_experience'},
+            {'mid': '3486', 'vote': 'up', 'slug': 'hierophant_green'},
+            {'mid': '63520', 'vote': 'up', 'slug': 'just_for_tonight_ill_be_your_bitch'},
+            {'mid': '19443', 'vote': 'up', 'slug': 'kayoubi_no_yurameki'},
+            {'mid': '14074', 'vote': 'up', 'slug': 'magicians_red'},
+            {'mid': '3655', 'vote': 'up', 'slug': 'killer_queen'},
+            {'mid': '3017', 'vote': 'up', 'slug': 'diver_down'},
+            {'mid': '40339', 'vote': 'up', 'slug': 'oasis_kuroinu_juu'},
+            {'mid': '22442', 'vote': 'up', 'slug': 'ojisan_to_futarikiri'},
+            {'mid': '3722', 'vote': 'up', 'slug': 'red_hot_chili_peppers'},
+            {'mid': '3036', 'vote': 'up', 'slug': 'sheer_heart_attack'},
+            {'mid': '3665', 'vote': 'up', 'slug': 'sky_high'},
+            {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
+            {'mid': '8040', 'vote': 'up', 'slug': 'submission_super_moon'},
+            {'mid': '3671', 'vote': 'up', 'slug': 'superfly'},
+            {'mid': '33063', 'vote': 'up', 'slug': 'tohth'},
         
-            # {'mid': '2980', 'vote': 'up', 'slug': 'atum'},
-            # {'mid': '16189', 'vote': 'up', 'slug': 'chocolate_disco'},
-            # {'mid': '16307', 'vote': 'up', 'slug': 'fuuka_and_a_train_of_excited_molesters'},
-            # {'mid': '3658', 'vote': 'up', 'slug': 'man_in_the_mirror'},
-            # {'mid': '14992', 'vote': 'up', 'slug': 'earth_wind_and_fire'},
+            {'mid': '2980', 'vote': 'up', 'slug': 'atum'},
+            {'mid': '16189', 'vote': 'up', 'slug': 'chocolate_disco'},
+            {'mid': '16307', 'vote': 'up', 'slug': 'fuuka_and_a_train_of_excited_molesters'},
+            {'mid': '3658', 'vote': 'up', 'slug': 'man_in_the_mirror'},
+            {'mid': '14992', 'vote': 'up', 'slug': 'earth_wind_and_fire'},
             # {'mid': '12356', 'vote': 'up', 'slug': 'planet_waves'},
             # {'mid': '21767', 'vote': 'up', 'slug': 'onegai_azumaya'},
-            # {'mid': '31185', 'vote': 'up', 'slug': 'queen_of_spades'},
-            # {'mid': '24414', 'vote': 'up', 'slug': 'saturday_girls_cant_hold_it_in'},
+            {'mid': '31185', 'vote': 'up', 'slug': 'queen_of_spades'},
+            {'mid': '24414', 'vote': 'up', 'slug': 'saturday_girls_cant_hold_it_in'},
             # {'mid': '17522', 'vote': 'up', 'slug': 'soft_machine'},
-            # {'mid': '6933', 'vote': 'up', 'slug': 'submission_r_re_mercury'},
+            {'mid': '6933', 'vote': 'up', 'slug': 'submission_r_re_mercury'},
             # {'mid': '3669', 'vote': 'up', 'slug': 'submission_mercury_plus'},
             # {'mid': '3667', 'vote': 'up', 'slug': 'submission_jupiter_plus'},
             # {'mid': '3670', 'vote': 'up', 'slug': 'submission_venus'},
             # {'mid': '11165', 'vote': 'up', 'slug': 'submission_saturn'},
-            # {'mid': '3668', 'vote': 'up', 'slug': 'submission_mars'},
-            # {'mid': '3040', 'vote': 'up', 'slug': 'the_grateful_dead'},
-            # {'mid': '18878', 'vote': 'up', 'slug': 'tegomisan'},
+            {'mid': '3668', 'vote': 'up', 'slug': 'submission_mars'},
+            {'mid': '3040', 'vote': 'up', 'slug': 'the_grateful_dead'},
+            {'mid': '18878', 'vote': 'up', 'slug': 'tegomisan'},
             # {'mid': '54851', 'vote': 'up', 'slug': 'oyako_de_onsen_ni_ittara_netorare_onsen_deshita'},
             # {'mid': '22361', 'vote': 'up', 'slug': 'osawarisan'},
             # {'mid': '12407', 'vote': 'up', 'slug': 'weather_report_genshiken'},
-            # {'mid': '46948', 'vote': 'up', 'slug': 'sweet_hearts_lesson'},
-            # {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
+            {'mid': '46948', 'vote': 'up', 'slug': 'sweet_hearts_lesson'},
+            {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
             {'mid': '2815', 'vote': 'up', 'slug': 'mai_favorite'},
             # {'mid': '2220', 'vote': 'up', 'slug': 'love_selection'},
             # {'mid': '14126', 'vote': 'up', 'slug': 'hina_project'},#
-            # {'mid': '2169', 'vote': 'up', 'slug': 'giri_giri_sisters'},
+            {'mid': '2169', 'vote': 'up', 'slug': 'giri_giri_sisters'},
             # {'mid': '3753', 'vote': 'up', 'slug': 'strawberry_panic'},
             # {'mid': '3770', 'vote': 'up', 'slug': 'kozue_panic'},
             # {'mid': '3895', 'vote': 'up', 'slug': 'fukufuku_kyousei_event'},
             # {'mid': '2921', 'vote': 'up', 'slug': 'hime_otome'},
-            # {'mid': '2184', 'vote': 'up', 'slug': 'honey_blonde'},
+            {'mid': '2184', 'vote': 'up', 'slug': 'honey_blonde'},
             # {'mid': '57050', 'vote': 'up', 'slug': 'as_innocent_as_a_bunny_the_pretty_guardian_loses_to_the_dick'},
             # {'mid': '58503', 'vote': 'up', 'slug': 'chin_make_makochan_with_amichan'},
             # {'mid': '55816', 'vote': 'up', 'slug': 'hotaru_no_oishasan_gokko'},
@@ -524,39 +530,39 @@ class DBExecute:
             # {'mid': '3311', 'vote': 'up', 'slug': 'harima_x'},
             # {'mid': '3305', 'vote': 'up', 'slug': 'cambell_juice'},
             # {'mid': '34179', 'vote': 'up', 'slug': 'bujideta'},
-            {'mid': '50945', 'vote': 'up', 'slug': 'konoha_don_tokumori'},
-            {'mid': '16444', 'vote': 'up', 'slug': 'ble_nana'},
-            {'mid': '47688', 'vote': 'up', 'slug': 'kage_hinate_ni_sakura_saku'},
-            {'mid': '10605', 'vote': 'up', 'slug': 'toushatei_naruto'},
-            {'mid': '44687', 'vote': 'up', 'slug': 'pink_no_bakajikara'},
-            {'mid': '5533', 'vote': 'up', 'slug': 'saboten_nindou'},
-            {'mid': '14079', 'vote': 'up', 'slug': 'saboten_campus'},
-            {'mid': '48453', 'vote': 'up', 'slug': 'saboten'},
-            {'mid': '55886', 'vote': 'up', 'slug': 'narutophole'},
-            {'mid': '58418', 'vote': 'up', 'slug': 'narutop_pink'},
-            {'mid': '49259', 'vote': 'up', 'slug': 'konoha_don'},
-            {'mid': '45222', 'vote': 'up', 'slug': 'konoha_saboten'},
-            {'mid': '45488', 'vote': 'up', 'slug': 'inniku_koushin'},
-            {'mid': '31371', 'vote': 'up', 'slug': 'ikimono_gakari'},
-            {'mid': '48617', 'vote': 'up', 'slug': 'hyakugo_no_jutsu'},
-            {'mid': '32567', 'vote': 'up', 'slug': 'haouju_saboten'},
-            {'mid': '21123', 'vote': 'up', 'slug': 'botan_to_sakura'},
-            {'mid': '25373', 'vote': 'up', 'slug': 'arashi_no_bouken'},
-            {'mid': '56849', 'vote': 'up', 'slug': 'pink_yu_gi'},
-            {'mid': '56203', 'vote': 'up', 'slug': 'black_magician_girl_forced_orgasm_duel'},
-            {'mid': '25628', 'vote': 'up', 'slug': 'dark_ceremony_edition'},
-            {'mid': '32997', 'vote': 'up', 'slug': 'endless_my_turn'},
-            {'mid': '60792', 'vote': 'up', 'slug': 'iron_rose'},
-            {'mid': '20630', 'vote': 'up', 'slug': 'ishizus_secret_draw'},
-            {'mid': '44421', 'vote': 'up', 'slug': 'naughty_anime_r'},
-            {'mid': '26647', 'vote': 'up', 'slug': 'overlay_magic'},
-            {'mid': '28713', 'vote': 'up', 'slug': 'pleasure_game'},
-            {'mid': '36189', 'vote': 'up', 'slug': 'seinen_miracle_jump'},
-            {'mid': '35643', 'vote': 'up', 'slug': 'sex_life_with_servant_bmg'},
-            {'mid': '47561', 'vote': 'up', 'slug': 'together_with_dark_magician_girl'},
+            # {'mid': '50945', 'vote': 'up', 'slug': 'konoha_don_tokumori'},
+            # {'mid': '16444', 'vote': 'up', 'slug': 'ble_nana'},
+            # {'mid': '47688', 'vote': 'up', 'slug': 'kage_hinate_ni_sakura_saku'},
+            # {'mid': '10605', 'vote': 'up', 'slug': 'toushatei_naruto'},
+            # {'mid': '44687', 'vote': 'up', 'slug': 'pink_no_bakajikara'},
+            # {'mid': '5533', 'vote': 'up', 'slug': 'saboten_nindou'},
+            # {'mid': '14079', 'vote': 'up', 'slug': 'saboten_campus'},
+            # {'mid': '48453', 'vote': 'up', 'slug': 'saboten'},
+            # {'mid': '55886', 'vote': 'up', 'slug': 'narutophole'},
+            # {'mid': '58418', 'vote': 'up', 'slug': 'narutop_pink'},
+            # {'mid': '49259', 'vote': 'up', 'slug': 'konoha_don'},
+            # {'mid': '45222', 'vote': 'up', 'slug': 'konoha_saboten'},
+            # {'mid': '45488', 'vote': 'up', 'slug': 'inniku_koushin'},
+            # {'mid': '31371', 'vote': 'up', 'slug': 'ikimono_gakari'},
+            # {'mid': '48617', 'vote': 'up', 'slug': 'hyakugo_no_jutsu'},
+            # {'mid': '32567', 'vote': 'up', 'slug': 'haouju_saboten'},
+            # {'mid': '21123', 'vote': 'up', 'slug': 'botan_to_sakura'},
+            # {'mid': '25373', 'vote': 'up', 'slug': 'arashi_no_bouken'},
+            # {'mid': '56849', 'vote': 'up', 'slug': 'pink_yu_gi'},
+            # {'mid': '56203', 'vote': 'up', 'slug': 'black_magician_girl_forced_orgasm_duel'},
+            # {'mid': '25628', 'vote': 'up', 'slug': 'dark_ceremony_edition'},
+            # {'mid': '32997', 'vote': 'up', 'slug': 'endless_my_turn'},
+            # {'mid': '60792', 'vote': 'up', 'slug': 'iron_rose'},
+            # {'mid': '20630', 'vote': 'up', 'slug': 'ishizus_secret_draw'},
+            # {'mid': '44421', 'vote': 'up', 'slug': 'naughty_anime_r'},
+            # {'mid': '26647', 'vote': 'up', 'slug': 'overlay_magic'},
+            # {'mid': '28713', 'vote': 'up', 'slug': 'pleasure_game'},
+            # {'mid': '36189', 'vote': 'up', 'slug': 'seinen_miracle_jump'},
+            # {'mid': '35643', 'vote': 'up', 'slug': 'sex_life_with_servant_bmg'},
+            # {'mid': '47561', 'vote': 'up', 'slug': 'together_with_dark_magician_girl'},
         
-            {'mid': '17035', 'vote': 'up', 'slug': 'kage_hinata_ni_saku'},
-            {'mid': '36608', 'vote': 'up', 'slug': 'karakishi_youhen_dan_compliation'},
+            # {'mid': '17035', 'vote': 'up', 'slug': 'kage_hinata_ni_saku'},
+            # {'mid': '36608', 'vote': 'up', 'slug': 'karakishi_youhen_dan_compliation'},
             # {'mid': '18065', 'vote': 'up', 'slug': 'orange_pie'},
             # {'mid': '3464', 'vote': 'up', 'slug': 'ai_koukaishi'},
             # {'mid': '45392', 'vote': 'up', 'slug': 'a_big_breasted_oni_girls_first_time_having_sex'},
@@ -712,8 +718,8 @@ class DBExecute:
         
             try:
                 # tempo entre 15 e 15 segundos, 1 mais um random entre 0 e 5
-                tempo = 10 + random.random() * 10
-                time.sleep(tempo)
+                # tempo = 1 + random.random() * 2
+                # time.sleep(tempo)
                 response = requests.post(URL, headers=HEADERS, cookies=COOKIES, data=data)
                 response.raise_for_status()  # Levanta um erro para status HTTP 4xx ou 5xx
         
@@ -739,36 +745,36 @@ class DBExecute:
             return f"MID {target_info['mid']} - Erro"
         
         # --- EXECUÇÃO PRINCIPAL ---
-        if __name__ == "__main__":
-            global alvo_atual
-            # while True:
-            #     # repetir smpte e exeutr s 6 e s 18h e minuto for 10
-            #     if hora_atual := __import__('datetime').datetime.now().hour in [6, 13, 19, 22]:
-            #         if __import__('datetime').datetime.now().minute == 28:
-            #             # pervrre todos os alvos
-            for alvo_atual2 in ALVOS:
-                alvo_atual = alvo_atual2
-                print(f"Iniciando {TOTAL_REQUESTS} requisições para o MID {alvo_atual['mid']} usando {NUM_THREADS} threads simultâneas...")
-                UPS_VARIAVEIS = int(random.random()*MULTIPLIER)
-                if alvo_atual['mid'] in EXTRA_UP:
+        # if __name__ == "__main__":
+        global alvo_atual
+        # while True:
+        #     # repetir smpte e exeutr s 6 e s 18h e minuto for 10
+        #     if hora_atual := __import__('datetime').datetime.now().hour in [6, 13, 19, 22]:
+        #         if __import__('datetime').datetime.now().minute == 28:
+        #             # pervrre todos os alvos
+        for alvo_atual2 in ALVOS:
+            alvo_atual = alvo_atual2
+            print(f"Iniciando {TOTAL_REQUESTS} requisições para o MID {alvo_atual['mid']} usando {NUM_THREADS} threads simultâneas...")
+            UPS_VARIAVEIS = int(random.random()*MULTIPLIER)
+            if alvo_atual['mid'] in EXTRA_UP:
+                UPS_VARIAVEIS += MULTIPLIER
+                if UPS_VARIAVEIS < 10000:
                     UPS_VARIAVEIS += MULTIPLIER
-                    if UPS_VARIAVEIS < 10000:
-                        UPS_VARIAVEIS += MULTIPLIER
-                if alvo_atual['mid'] in EXTRA_UP2:
-                    UPS_VARIAVEIS += MULTIPLIER
-                    if UPS_VARIAVEIS < 25000:
-                        UPS_VARIAVEIS += MULTIPLIER*4
-                print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
-                # Usa ThreadPoolExecutor para gerenciar um pool de threads
-                with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
-                    # Agenda a execução da função 'make_request' por 'TOTAL_REQUESTS' vezes.
-                    # O executor gerencia a fila, garantindo que no máximo 'NUM_THREADS'
-                    # sejam executadas ao mesmo tempo.
-                    futures = [executor.submit(make_request, i + 1, alvo_atual) for i in range(TOTAL_REQUESTS + UPS_VARIAVEIS)]
-        
-                    # O bloco 'with' garante que o programa só continuará após
-                    # todas as 'TOTAL_REQUESTS' tarefas agendadas terminarem.
-                    concurrent.futures.wait(futures)
-        
-                print(f"Processo finalizado. {TOTAL_REQUESTS + UPS_VARIAVEIS} requisições foram enviadas.")
-                time.sleep(30)
+            if alvo_atual['mid'] in EXTRA_UP2:
+                UPS_VARIAVEIS += MULTIPLIER
+                if UPS_VARIAVEIS < 25000:
+                    UPS_VARIAVEIS += MULTIPLIER*4
+            print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
+            # Usa ThreadPoolExecutor para gerenciar um pool de threads
+            with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
+                # Agenda a execução da função 'make_request' por 'TOTAL_REQUESTS' vezes.
+                # O executor gerencia a fila, garantindo que no máximo 'NUM_THREADS'
+                # sejam executadas ao mesmo tempo.
+                futures = [executor.submit(make_request, i + 1, alvo_atual) for i in range(TOTAL_REQUESTS + UPS_VARIAVEIS)]
+    
+                # O bloco 'with' garante que o programa só continuará após
+                # todas as 'TOTAL_REQUESTS' tarefas agendadas terminarem.
+                concurrent.futures.wait(futures)
+    
+            print(f"Processo finalizado. {TOTAL_REQUESTS + UPS_VARIAVEIS} requisições foram enviadas.")
+            time.sleep(2)
