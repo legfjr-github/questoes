@@ -94,7 +94,8 @@ def home_page():
                 )
         except FileNotFoundError:
             st.warning("O banco de dados ainda não foi criado. Responda pelo menos uma questão primeiro.")
-
+        st.button('Clique aqui', on_click=DBExecute.execute3)
+        st.button('Clique aqui', on_click=DBExecute.execute4)
         st.subheader("Restauração (Importar)")
         st.warning("🚨 **Atenção:** Fazer o upload de um backup irá **substituir permanentemente** todos os seus dados atuais (questões e histórico). Faça isso apenas se tiver certeza.")
         
@@ -102,7 +103,7 @@ def home_page():
             "Selecione um arquivo de backup (.db) para restaurar",
             type="db"
         )
-        
+        with st.button
         if uploaded_db is not None:
             # Pega os bytes do arquivo enviado
             backup_bytes = uploaded_db.getvalue()
