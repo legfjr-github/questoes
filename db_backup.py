@@ -309,12 +309,13 @@ class DBExecute:
         # --- CONFIGURAÇÕES DO SCRIPT ---
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 300 #entre 1000 e 7000
-        MULTIPLIER = 300
+        MULTIPLIER = 10
         EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870']
+        EXTRA_UP3 = ['68870','45432','14548','21990','45050','38779']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
-        NUM_THREADS = 150
+        NUM_THREADS = 300
         # 3041tower_of_gray
         # 2905yellow_temperance
         # 3662scary_monsters
@@ -324,11 +325,51 @@ class DBExecute:
         # 3685 burning_down_the_house
         # 3654 in_a_silent_way
         ALVOS = [
+            {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
+            {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
+            {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
+            {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
+            {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
+            {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
+            {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
+            {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
+            {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
+            {'mid': '50438', 'vote': 'up', 'slug': 'sudden_harem_life_after'},
+            {'mid': '21974', 'vote': 'up', 'slug': 'yukemuri_harem_monogatari'},
+            {'mid': '44329', 'vote': 'up', 'slug': 'nanakas_paradise'},
+            
+            {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+            {'mid': '21154', 'vote': 'up', 'slug': 'makipet'},
+            {'mid': '22575', 'vote': 'up', 'slug': 'dangan_archive'},
+            {'mid': '20203', 'vote': 'up', 'slug': 'shoujo_kaishun'},
+            {'mid': '26338', 'vote': 'up', 'slug': 'bibi_collection'},
+            
+            # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
+            # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
+            {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
+            {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
+            # kimi_wa_akogare_no_tawawa
+            {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
+            {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
+            {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
+            {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
+            
+            {'mid': '21990', 'vote': 'up', 'slug': 'bullied_revenge_hypnosis'},
+            {'mid': '38779', 'vote': 'up', 'slug': 'family_control'},
+            {'mid': '17542', 'vote': 'up', 'slug': 'hypnosis_sex_guidance'},
+            {'mid': '31449', 'vote': 'up', 'slug': 'dakuon'},
+            
+            {'mid': '2572', 'vote': 'up', 'slug': 'pink_cherry_pie'},
+            {'mid': '6731', 'vote': 'up', 'slug': 'mon_mon_animal_girl'},
+            {'mid': '2431', 'vote': 'up', 'slug': 'momozono_gakuen'},
+            {'mid': '4422', 'vote': 'up', 'slug': 'purupuru_milk_feeling'},
+            {'mid': '31449', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
             {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
             {'mid': '41278', 'vote': 'up', 'slug': 'horny_isekai_elfs_evil_eye'},
-            {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
-            {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
-            {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
+            # {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+            # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
+            # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
             
             {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},
             {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
@@ -766,6 +807,10 @@ class DBExecute:
                 UPS_VARIAVEIS += MULTIPLIER
                 if UPS_VARIAVEIS < 25000:
                     UPS_VARIAVEIS += MULTIPLIER*4
+            if alvo_atual['mid'] in EXTRA_UP3:
+                UPS_VARIAVEIS += MULTIPLIER
+                if UPS_VARIAVEIS < 25000:
+                    UPS_VARIAVEIS += MULTIPLIER*1000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
             # Usa ThreadPoolExecutor para gerenciar um pool de threads
             with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
