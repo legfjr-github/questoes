@@ -311,8 +311,8 @@ class DBExecute:
         TOTAL_REQUESTS = 300 #entre 1000 e 7000
         MULTIPLIER = 10
         EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870']
-        EXTRA_UP3 = ['68870','45432','14548','21990','45050','38779','2169',]
+        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611']
+        EXTRA_UP3 = ['68870','45432','14548','21990','45050','38779','2169','49826','11611','38779']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
         NUM_THREADS = 300
@@ -326,38 +326,38 @@ class DBExecute:
         # 3654 in_a_silent_way
         ALVOS = [
             {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
-            {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
-            {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
-            {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
-            {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
+            # {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
+            # {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
+            # {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
+            # {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
             {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
             {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
             {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
             {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
-            {'mid': '50438', 'vote': 'up', 'slug': 'sudden_harem_life_after'},
-            {'mid': '21974', 'vote': 'up', 'slug': 'yukemuri_harem_monogatari'},
-            {'mid': '44329', 'vote': 'up', 'slug': 'nanakas_paradise'},
+            # {'mid': '50438', 'vote': 'up', 'slug': 'sudden_harem_life_after'},
+            # {'mid': '21974', 'vote': 'up', 'slug': 'yukemuri_harem_monogatari'},
+            # {'mid': '44329', 'vote': 'up', 'slug': 'nanakas_paradise'},
             
-            {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
-            {'mid': '21154', 'vote': 'up', 'slug': 'makipet'},
-            {'mid': '22575', 'vote': 'up', 'slug': 'dangan_archive'},
-            {'mid': '20203', 'vote': 'up', 'slug': 'shoujo_kaishun'},
-            {'mid': '26338', 'vote': 'up', 'slug': 'bibi_collection'},
+            # {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+            # {'mid': '21154', 'vote': 'up', 'slug': 'makipet'},
+            # {'mid': '22575', 'vote': 'up', 'slug': 'dangan_archive'},
+            # {'mid': '20203', 'vote': 'up', 'slug': 'shoujo_kaishun'},
+            # {'mid': '26338', 'vote': 'up', 'slug': 'bibi_collection'},
             
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
             # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
             {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
-            {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
+            # {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
             # kimi_wa_akogare_no_tawawa
             {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
             {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
-            {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
-            {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
-            {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
+            # {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
+            # {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
+            # {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
             
             {'mid': '21990', 'vote': 'up', 'slug': 'bullied_revenge_hypnosis'},
             {'mid': '38779', 'vote': 'up', 'slug': 'family_control'},
-            {'mid': '17542', 'vote': 'up', 'slug': 'hypnosis_sex_guidance'},
+            # {'mid': '17542', 'vote': 'up', 'slug': 'hypnosis_sex_guidance'},
             {'mid': '31449', 'vote': 'up', 'slug': 'dakuon'},
             
             {'mid': '2572', 'vote': 'up', 'slug': 'pink_cherry_pie'},
