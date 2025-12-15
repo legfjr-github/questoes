@@ -103,7 +103,7 @@ def home_page():
             "Selecione um arquivo de backup (.db) para restaurar",
             type="db"
         )
-        with st.button
+        
         if uploaded_db is not None:
             # Pega os bytes do arquivo enviado
             backup_bytes = uploaded_db.getvalue()
