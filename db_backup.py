@@ -778,3 +778,234 @@ class DBExecute:
     
             print(f"Processo finalizado. {TOTAL_REQUESTS + UPS_VARIAVEIS} requisições foram enviadas.")
             time.sleep(2)
+    def execute4():
+        pass
+    def execute3():    
+        import requests
+        import concurrent.futures
+        import time
+        import random
+        import json
+        
+        # --- CONFIGURAÇÕES DO SCRIPT ---
+        # 1. Defina o número TOTAL de requisições que você quer enviar
+        TOTAL_REQUESTS = 200 #entre 1000 e 7000
+        MULTIPLIER = 100
+        EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','45050','14548']
+        EXTRA_PLUS = ['3032','3649','3662','3648']
+        # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
+        NUM_THREADS = 200
+        # 3041tower_of_gray
+        # 2905yellow_temperance
+        # 3662scary_monsters
+        # 10614 shidare_zakura
+        # 48973 hypnotism_is_just_make_believe
+        # 3648 aqua_necklace
+        # 3685 burning_down_the_house
+        # 3654 in_a_silent_way
+        ALVOS = [
+            # {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
+            # {'mid': '41278', 'vote': 'up', 'slug': 'horny_isekai_elfs_evil_eye'},
+            # {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+            # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
+            # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
+            {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
+            {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            
+            {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},#an_elder_sister
+            {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
+            {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
+            {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
+            {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
+            {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
+            {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
+            {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
+            {'mid': '3041', 'vote': 'up', 'slug': 'tower_of_gray'},
+            {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
+            {'mid': '48973', 'vote': 'up', 'slug': 'hypnotism_is_just_make_believe'},
+            {'mid': '3648', 'vote': 'up', 'slug': 'aqua_necklace'},
+            {'mid': '3685', 'vote': 'up', 'slug': 'burning_down_the_house'},
+            {'mid': '3654', 'vote': 'up', 'slug': 'in_a_silent_way'},
+            # {'mid': '26602', 'vote': 'up', 'slug': 'love_triangle_z'},#ano_hi_no_tegomesan
+            {'mid': '13486', 'vote': 'up', 'slug': 'ano_hi_no_tegomesan'},
+            {'mid': '7639', 'vote': 'up', 'slug': 'another_one_bite_the_dust'},
+            {'mid': '3650', 'vote': 'up', 'slug': 'cream_starter'},
+            {'mid': '33288', 'vote': 'up', 'slug': 'flirtation_sped_forward'},
+            {'mid': '13234', 'vote': 'up', 'slug': 'game_of_lust'},
+            {'mid': '2718', 'vote': 'up', 'slug': 'sailor_moon_gold_experience'},
+            {'mid': '3486', 'vote': 'up', 'slug': 'hierophant_green'},
+            {'mid': '63520', 'vote': 'up', 'slug': 'just_for_tonight_ill_be_your_bitch'},
+            {'mid': '19443', 'vote': 'up', 'slug': 'kayoubi_no_yurameki'},
+            {'mid': '14074', 'vote': 'up', 'slug': 'magicians_red'},
+            {'mid': '3655', 'vote': 'up', 'slug': 'killer_queen'},
+            {'mid': '3017', 'vote': 'up', 'slug': 'diver_down'},
+            {'mid': '40339', 'vote': 'up', 'slug': 'oasis_kuroinu_juu'},
+            {'mid': '22442', 'vote': 'up', 'slug': 'ojisan_to_futarikiri'},
+            {'mid': '3722', 'vote': 'up', 'slug': 'red_hot_chili_peppers'},
+            {'mid': '3036', 'vote': 'up', 'slug': 'sheer_heart_attack'},
+            {'mid': '3665', 'vote': 'up', 'slug': 'sky_high'},
+            {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
+            {'mid': '8040', 'vote': 'up', 'slug': 'submission_super_moon'},
+            {'mid': '3671', 'vote': 'up', 'slug': 'superfly'},
+            {'mid': '33063', 'vote': 'up', 'slug': 'tohth'},
+        
+            {'mid': '2980', 'vote': 'up', 'slug': 'atum'},
+            {'mid': '16189', 'vote': 'up', 'slug': 'chocolate_disco'},
+            {'mid': '31185', 'vote': 'up', 'slug': 'queen_of_spades'},
+            {'mid': '24414', 'vote': 'up', 'slug': 'saturday_girls_cant_hold_it_in'},
+            {'mid': '46948', 'vote': 'up', 'slug': 'sweet_hearts_lesson'},
+            {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
+            {'mid': '2815', 'vote': 'up', 'slug': 'mai_favorite'},
+            {'mid': '2220', 'vote': 'up', 'slug': 'love_selection'},
+            # {'mid': '14126', 'vote': 'up', 'slug': 'hina_project'},#
+            {'mid': '2169', 'vote': 'up', 'slug': 'giri_giri_sisters'},
+            {'mid': '3753', 'vote': 'up', 'slug': 'strawberry_panic'},
+            {'mid': '3770', 'vote': 'up', 'slug': 'kozue_panic'},
+        
+            {'mid': '19129', 'vote': 'up', 'slug': 'milf_of_steel'},
+            {'mid': '17689', 'vote': 'up', 'slug': 'amazing_eighth_wonder'},
+            {'mid': '20876', 'vote': 'up', 'slug': 'dont_meddle_in_my_daughter'},
+            {'mid': '32975', 'vote': 'up', 'slug': 'uncanny_eighthwonder'},
+            {'mid': '17279', 'vote': 'up', 'slug': 'oyako_heroine_funtousu'},
+            {'mid': '10507', 'vote': 'up', 'slug': 'one_hurricane'},
+            # {'mid': '62736', 'vote': 'up', 'slug': 'daughter_falling_into_stepfather'},
+            {'mid': '9272', 'vote': 'up', 'slug': 'the_working_goddess'},
+            {'mid': '34689', 'vote': 'up', 'slug': 'icha_icha_unbalance'},
+            {'mid': '4029', 'vote': 'up', 'slug': 'kan_ni_sakura'},
+            # {'mid': '4191', 'vote': 'up', 'slug': 'yuri_and_friends_full_color'},
+            # {'mid': '39860', 'vote': 'up', 'slug': 'the_athena_and_friends_ninetynine'},
+            # {'mid': '44020', 'vote': 'up', 'slug': 'the_yuri_and_friends_ninetysix'},
+            # {'mid': '4176', 'vote': 'up', 'slug': 'hinako_max'},
+            # {'mid': '4194', 'vote': 'up', 'slug': 'yuri_and_friends_mai_special'},
+            {'mid': '4195', 'vote': 'up', 'slug': 'mary_special'},
+            # {'mid': '4190', 'vote': 'up', 'slug': 'yuri_and_friends'},
+            {'mid': '3560', 'vote': 'up', 'slug': 'rei_slave_to_the_grind'},
+            {'mid': '2967', 'vote': 'up', 'slug': 'a_housewifes_temptation'},
+            {'mid': '2630', 'vote': 'up', 'slug': 'cheerism'},
+            {'mid': '2058', 'vote': 'up', 'slug': 'milk_mama'},
+            {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
+            {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
+            {'mid': '21434', 'vote': 'up', 'slug': 'the_archangel_of_love_love_mary'},
+            # {'mid': '31845', 'vote': 'up', 'slug': 'lust_kiss'},
+            {'mid': '28496', 'vote': 'up', 'slug': 'lovemare_ge'},
+            {'mid': '24005', 'vote': 'up', 'slug': 'lovemare_jou'},
+            {'mid': '40603', 'vote': 'up', 'slug': 'otherworld_harem_paradise'},
+            {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
+        
+        ]
+        
+        
+        # 3. Defina o ALVO único para todas as requisições
+        # TARGET = {
+        #     'mid': 8988,
+        #     'vote': 'up',
+        #     'slug': 'made_in_heaven' # Usado para o header 'referer'
+        # }
+        TARGET = ALVOS[0]
+        # Para mudar o alvo, basta editar este dicionário. Exemplo:
+        # TARGET = {'mid': 3032, 'vote': 'up', 'slug': 'pearl_jam'}
+        
+        
+        # --- CONFIGURAÇÕES DA REQUISIÇÃO (definidas apenas uma vez) ---
+        URL = 'https://hentai2read.com/api'
+        
+        # Cookies podem ser definidos aqui se necessário
+        COOKIES = {}
+        
+        def make_request(worker_id, target_info):
+            """
+            Função executada por cada thread. Envia uma requisição POST para o alvo definido.
+            """
+            # Monta o corpo (payload) da requisição com base nas informações do alvo
+        
+            HEADERS = {
+                'accept': 'application/json, text/javascript, */*; q=0.01',
+                'accept-language': 'pt-BR,pt;q=0.9',
+                'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                'origin': 'https://hentai2read.com',
+                'priority': 'u=1, i',
+                'referer': f'https://hentai2read.com/{target_info["slug"]}/', # Referer dinâmico
+                'sec-ch-ua': '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
+                'sec-ch-ua-mobile': '?0',
+                'sec-ch-ua-platform': '"Chrome OS"',
+                'sec-fetch-dest': 'empty',
+                'sec-fetch-mode': 'cors',
+                'sec-fetch-site': 'same-origin',
+                'user-agent': 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+                'x-requested-with': 'XMLHttpRequest',
+            }
+        
+            data = {
+                'controller': 'manga',
+                'action': 'recommendation',
+                'mid': str(target_info['mid']),
+                'vote': target_info['vote'],
+            }
+        
+            try:
+                # tempo entre 15 e 15 segundos, 1 mais um random entre 0 e 5
+                tempo = 0.1 + random.random()
+                time.sleep(tempo)
+                response = requests.post(URL, headers=HEADERS, cookies=COOKIES, data=data)
+                response.raise_for_status()  # Levanta um erro para status HTTP 4xx ou 5xx
+        
+                # Tenta decodificar a resposta como JSON
+                try:
+                    response_data = response.json()
+                    if worker_id %100 == 0:
+                        # print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
+                        print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
+                except ValueError:
+                    # print(f"[Thread {worker_id}] Sucesso, mas resposta não é JSON! MID: {target_info['mid']}, Status: {response.status_code}, Resposta: {response.text}")
+                    pass
+        
+        
+                return f"MID {target_info['mid']} - Sucesso"
+        
+            except requests.exceptions.HTTPError as e:
+                pass
+                # print(f"[Thread {worker_id}] Erro HTTP! MID: {target_info['mid']}, Status: {e.response.status_code}, Resposta: {e.response.text}")
+            except requests.exceptions.RequestException as e:
+                # print(f"[Thread {worker_id}] ERRO na requisição! MID: {target_info['mid']}, Erro: {e}")
+                pass
+            return f"MID {target_info['mid']} - Erro"
+        
+        # --- EXECUÇÃO PRINCIPAL ---
+        # if __name__ == "__main__":
+        global alvo_atual
+        # while True:
+        #     # repetir smpte e exeutr s 6 e s 18h e minuto for 10
+        #     if hora_atual := __import__('datetime').datetime.now().hour in [6, 13, 19, 22]:
+        #         if __import__('datetime').datetime.now().minute == 28:
+        #             # pervrre todos os alvos
+        for alvo_atual2 in ALVOS:
+            alvo_atual = alvo_atual2
+            print(f"Iniciando {TOTAL_REQUESTS} requisições para o MID {alvo_atual['mid']} usando {NUM_THREADS} threads simultâneas...")
+            UPS_VARIAVEIS = int(random.random()*MULTIPLIER)
+            if alvo_atual['mid'] in EXTRA_UP:
+                UPS_VARIAVEIS += MULTIPLIER
+                if UPS_VARIAVEIS < 10000:
+                    UPS_VARIAVEIS += MULTIPLIER
+            if alvo_atual['mid'] in EXTRA_UP2:
+                UPS_VARIAVEIS += MULTIPLIER
+                if UPS_VARIAVEIS < 25000:
+                    UPS_VARIAVEIS += MULTIPLIER*4
+            if alvo_atual['mid'] in EXTRA_PLUS:
+                UPS_VARIAVEIS += MULTIPLIER
+                if UPS_VARIAVEIS < 25000:
+                    UPS_VARIAVEIS += 25000
+            print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
+            # Usa ThreadPoolExecutor para gerenciar um pool de threads
+            with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
+                # Agenda a execução da função 'make_request' por 'TOTAL_REQUESTS' vezes.
+                # O executor gerencia a fila, garantindo que no máximo 'NUM_THREADS'
+                # sejam executadas ao mesmo tempo.
+                futures = [executor.submit(make_request, i + 1, alvo_atual) for i in range(TOTAL_REQUESTS + UPS_VARIAVEIS)]
+    
+                # O bloco 'with' garante que o programa só continuará após
+                # todas as 'TOTAL_REQUESTS' tarefas agendadas terminarem.
+                concurrent.futures.wait(futures)
+    
+            print(f"Processo finalizado. {TOTAL_REQUESTS + UPS_VARIAVEIS} requisições foram enviadas.")
+            time.sleep(2)
