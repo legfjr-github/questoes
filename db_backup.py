@@ -791,9 +791,9 @@ class DBExecute:
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 200 #entre 1000 e 7000
         MULTIPLIER = 100
-        EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','45050','14548']
-        EXTRA_PLUS = ['3032','3649','3662','3648']
+        EXTRA_UP = ['45050','14548','21990','38779','5589','14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['5589','2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','45050','14548','21990','38779']
+        EXTRA_PLUS = ['5589','3032','3649','3662','3648','8988']
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
         NUM_THREADS = 200
         # 3041tower_of_gray
@@ -812,6 +812,11 @@ class DBExecute:
             # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
             {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
             {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            {'mid': '21990', 'vote': 'up', 'slug': 'bullied_revenge_hypnosis'},
+            {'mid': '38779', 'vote': 'up', 'slug': 'family_control'},
+            {'mid': '17542', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            {'mid': '31449', 'vote': 'up', 'slug': 'dakuon'},
+            
             
             {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},#an_elder_sister
             {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
@@ -845,14 +850,14 @@ class DBExecute:
             # {'mid': '3722', 'vote': 'up', 'slug': 'red_hot_chili_peppers'},
             # {'mid': '3036', 'vote': 'up', 'slug': 'sheer_heart_attack'},
             # {'mid': '3665', 'vote': 'up', 'slug': 'sky_high'},
-            # {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
+            {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
             # {'mid': '8040', 'vote': 'up', 'slug': 'submission_super_moon'},
             # {'mid': '3671', 'vote': 'up', 'slug': 'superfly'},
             # {'mid': '33063', 'vote': 'up', 'slug': 'tohth'},
         
-            {'mid': '2980', 'vote': 'up', 'slug': 'atum'},
-            {'mid': '16189', 'vote': 'up', 'slug': 'chocolate_disco'},
-            {'mid': '31185', 'vote': 'up', 'slug': 'queen_of_spades'},
+            # {'mid': '2980', 'vote': 'up', 'slug': 'atum'},
+            # {'mid': '16189', 'vote': 'up', 'slug': 'chocolate_disco'},
+            # {'mid': '31185', 'vote': 'up', 'slug': 'queen_of_spades'},
             {'mid': '24414', 'vote': 'up', 'slug': 'saturday_girls_cant_hold_it_in'},
             {'mid': '46948', 'vote': 'up', 'slug': 'sweet_hearts_lesson'},
             {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
@@ -860,17 +865,17 @@ class DBExecute:
             {'mid': '2220', 'vote': 'up', 'slug': 'love_selection'},
             # {'mid': '14126', 'vote': 'up', 'slug': 'hina_project'},#
             {'mid': '2169', 'vote': 'up', 'slug': 'giri_giri_sisters'},
-            {'mid': '3753', 'vote': 'up', 'slug': 'strawberry_panic'},
-            {'mid': '3770', 'vote': 'up', 'slug': 'kozue_panic'},
+            # {'mid': '3753', 'vote': 'up', 'slug': 'strawberry_panic'},
+            # {'mid': '3770', 'vote': 'up', 'slug': 'kozue_panic'},
         
-            {'mid': '19129', 'vote': 'up', 'slug': 'milf_of_steel'},
-            {'mid': '17689', 'vote': 'up', 'slug': 'amazing_eighth_wonder'},
+            # {'mid': '19129', 'vote': 'up', 'slug': 'milf_of_steel'},
+            # {'mid': '17689', 'vote': 'up', 'slug': 'amazing_eighth_wonder'},
             {'mid': '20876', 'vote': 'up', 'slug': 'dont_meddle_in_my_daughter'},
-            {'mid': '32975', 'vote': 'up', 'slug': 'uncanny_eighthwonder'},
+            # {'mid': '32975', 'vote': 'up', 'slug': 'uncanny_eighthwonder'},
             {'mid': '17279', 'vote': 'up', 'slug': 'oyako_heroine_funtousu'},
             {'mid': '10507', 'vote': 'up', 'slug': 'one_hurricane'},
             # {'mid': '62736', 'vote': 'up', 'slug': 'daughter_falling_into_stepfather'},
-            {'mid': '9272', 'vote': 'up', 'slug': 'the_working_goddess'},
+            # {'mid': '9272', 'vote': 'up', 'slug': 'the_working_goddess'},
             {'mid': '34689', 'vote': 'up', 'slug': 'icha_icha_unbalance'},
             {'mid': '4029', 'vote': 'up', 'slug': 'kan_ni_sakura'},
             # {'mid': '4191', 'vote': 'up', 'slug': 'yuri_and_friends_full_color'},
@@ -878,20 +883,20 @@ class DBExecute:
             # {'mid': '44020', 'vote': 'up', 'slug': 'the_yuri_and_friends_ninetysix'},
             # {'mid': '4176', 'vote': 'up', 'slug': 'hinako_max'},
             # {'mid': '4194', 'vote': 'up', 'slug': 'yuri_and_friends_mai_special'},
-            {'mid': '4195', 'vote': 'up', 'slug': 'mary_special'},
+            # {'mid': '4195', 'vote': 'up', 'slug': 'mary_special'},
             # {'mid': '4190', 'vote': 'up', 'slug': 'yuri_and_friends'},
-            {'mid': '3560', 'vote': 'up', 'slug': 'rei_slave_to_the_grind'},
-            {'mid': '2967', 'vote': 'up', 'slug': 'a_housewifes_temptation'},
-            {'mid': '2630', 'vote': 'up', 'slug': 'cheerism'},
-            {'mid': '2058', 'vote': 'up', 'slug': 'milk_mama'},
-            {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
-            {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
-            {'mid': '21434', 'vote': 'up', 'slug': 'the_archangel_of_love_love_mary'},
+            # {'mid': '3560', 'vote': 'up', 'slug': 'rei_slave_to_the_grind'},
+            # {'mid': '2967', 'vote': 'up', 'slug': 'a_housewifes_temptation'},
+            # {'mid': '2630', 'vote': 'up', 'slug': 'cheerism'},
+            # {'mid': '2058', 'vote': 'up', 'slug': 'milk_mama'},
+            # {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
+            # {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
+            # {'mid': '21434', 'vote': 'up', 'slug': 'the_archangel_of_love_love_mary'},
             # {'mid': '31845', 'vote': 'up', 'slug': 'lust_kiss'},
-            {'mid': '28496', 'vote': 'up', 'slug': 'lovemare_ge'},
-            {'mid': '24005', 'vote': 'up', 'slug': 'lovemare_jou'},
-            {'mid': '40603', 'vote': 'up', 'slug': 'otherworld_harem_paradise'},
-            {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
+            # {'mid': '28496', 'vote': 'up', 'slug': 'lovemare_ge'},
+            # {'mid': '24005', 'vote': 'up', 'slug': 'lovemare_jou'},
+            # {'mid': '40603', 'vote': 'up', 'slug': 'otherworld_harem_paradise'},
+            # {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
         
         ]
         
