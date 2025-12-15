@@ -507,17 +507,19 @@ class DBExecute:
             # {'mid': '61454', 'vote': 'up', 'slug': 'yuita_ma'},
             # {'mid': '17133', 'vote': 'up', 'slug': 'sister_breeder'},
             # {'mid': '50107', 'vote': 'up', 'slug': 'ima_real'},
-            # {'mid': '60408', 'vote': 'up', 'slug': 'takane_tama'},
-            # {'mid': '7321', 'vote': 'up', 'slug': 'sutotama'},
+            {'mid': '60408', 'vote': 'up', 'slug': 'takane_tama'},
+            {'mid': '7321', 'vote': 'up', 'slug': 'sutotama'},
             {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
-            # {'mid': '13974', 'vote': 'up', 'slug': 'reitama'},
+            {'mid': '13974', 'vote': 'up', 'slug': 'reitama'},
             # {'mid': '60371', 'vote': 'up', 'slug': 'outama_king_of_soul'},
             # {'mid': '19913', 'vote': 'up', 'slug': 'maritama_renshuuchou'},
-            # {'mid': '14978', 'vote': 'up', 'slug': 'mana_tama_plus'},
+            {'mid': '14978', 'vote': 'up', 'slug': 'mana_tama_plus'},
             # {'mid': '4483', 'vote': 'up', 'slug': 'mamotama'},
             # {'mid': '19072', 'vote': 'up', 'slug': 'maitama'},
             # {'mid': '9505', 'vote': 'up', 'slug': 'eritama_eri_love_middleage'},
-            # {'mid': '4472', 'vote': 'up', 'slug': 'doritama'},
+            {'mid': '4472', 'vote': 'up', 'slug': 'doritama'},
+            {'mid': '11853', 'vote': 'up', 'slug': 'misgard_feoh'},
+            
             # {'mid': '23377', 'vote': 'up', 'slug': 'c93_rakugakichou'},
             # {'mid': '25289', 'vote': 'up', 'slug': 'akanes_in_a_pinch'},
             # {'mid': '8751', 'vote': 'up', 'slug': 'yui_chan_to_issho'},
@@ -566,20 +568,20 @@ class DBExecute:
             # {'mid': '18065', 'vote': 'up', 'slug': 'orange_pie'},
             # {'mid': '3464', 'vote': 'up', 'slug': 'ai_koukaishi'},
             # {'mid': '45392', 'vote': 'up', 'slug': 'a_big_breasted_oni_girls_first_time_having_sex'},
-            # {'mid': '3190', 'vote': 'up', 'slug': 'bonneys_defeat'},
+            {'mid': '3190', 'vote': 'up', 'slug': 'bonneys_defeat'},
             # {'mid': '31692', 'vote': 'up', 'slug': 'chop_stick'},
             # {'mid': '9684', 'vote': 'up', 'slug': 'dorei_kentoushi_rebecca'},
             # {'mid': '5568', 'vote': 'up', 'slug': 'grandline_chronicle_colorful_sainyuu'},
             # {'mid': '8211', 'vote': 'up', 'slug': 'instinct_world'},
             # {'mid': '33114', 'vote': 'up', 'slug': 'kaizoku_jingi'},
-            # {'mid': '11189', 'vote': 'up', 'slug': 'koukai_soushuuhen'},
+            {'mid': '11189', 'vote': 'up', 'slug': 'koukai_soushuuhen'},
             # {'mid': '15447', 'vote': 'up', 'slug': 'love_koukaishi'},
             # {'mid': '3201', 'vote': 'up', 'slug': 'love_love_hurricane'},
             # {'mid': '3781', 'vote': 'up', 'slug': 'love_2_hurricane'},
             # {'mid': '6012', 'vote': 'up', 'slug': 'mero_mero_girls_new_world'},
             # {'mid': '33046', 'vote': 'up', 'slug': 'oonami_ni_norou'},
             # {'mid': '33047', 'vote': 'up', 'slug': 'op_sex'},
-            # {'mid': '3541', 'vote': 'up', 'slug': 'snake_princess'},
+            {'mid': '3541', 'vote': 'up', 'slug': 'snake_princess'},
             # {'mid': '4167', 'vote': 'up', 'slug': 'through_the_wall'},
             # {'mid': '15703', 'vote': 'up', 'slug': 'two_piece_nami_vs_arlong'},
             # {'mid': '11117', 'vote': 'up', 'slug': 'weather_report_muten'},
@@ -587,23 +589,23 @@ class DBExecute:
             # {'mid': '8743', 'vote': 'up', 'slug': 'anataga_nozomunara_watashi'},
             # {'mid': '19273', 'vote': 'up', 'slug': 'death_note_soushuuhen'},
             # {'mid': '24415', 'vote': 'up', 'slug': 'ff_fight'},
-            # {'mid': '22615', 'vote': 'up', 'slug': 'tifa_sai'},
-            # {'mid': '3548', 'vote': 'up', 'slug': 'tifa_hard'},
-            # {'mid': '3547', 'vote': 'up', 'slug': 'tifa_climax'},
-            # {'mid': '3546', 'vote': 'up', 'slug': 'tifa_before_climax'},
+            {'mid': '22615', 'vote': 'up', 'slug': 'tifa_sai'},
+            {'mid': '3548', 'vote': 'up', 'slug': 'tifa_hard'},
+            {'mid': '3547', 'vote': 'up', 'slug': 'tifa_climax'},
+            {'mid': '3546', 'vote': 'up', 'slug': 'tifa_before_climax'},
             # {'mid': '3549', 'vote': 'up', 'slug': 'uzumaki_hanataba'},
-            # {'mid': '7726', 'vote': 'up', 'slug': 'virgin_idol'},
+            {'mid': '7726', 'vote': 'up', 'slug': 'virgin_idol'},
             # {'mid': '3518', 'vote': 'up', 'slug': 'hinata'},
-            # {'mid': '19075', 'vote': 'up', 'slug': 'the_only_shame'},
+            {'mid': '19075', 'vote': 'up', 'slug': 'the_only_shame'},
             # {'mid': '38088', 'vote': 'up', 'slug': 'an_ancient_tradition_young_wife_is_harassed'},
             # {'mid': '6818', 'vote': 'up', 'slug': '18_gou_ga_saimin_ge_ntr_reru_hon'},
             # {'mid': '25894', 'vote': 'up', 'slug': '2_for_1_delicious_fun'},
-            # {'mid': '67969', 'vote': 'up', 'slug': '2x1_lunch'},
+            {'mid': '67969', 'vote': 'up', 'slug': '2x1_lunch'},
             # {'mid': '38992', 'vote': 'up', 'slug': 'aim_at_planet_nameki'},
-            # {'mid': '52330', 'vote': 'up', 'slug': 'android_eighteen_vs_master_roshi'},
+            {'mid': '52330', 'vote': 'up', 'slug': 'android_eighteen_vs_master_roshi'},
             # {'mid': '25265', 'vote': 'up', 'slug': 'android_21s_remodeling_plan'},
             # {'mid': '16443', 'vote': 'up', 'slug': 'android_n18_and_mrsatan'},
-            # {'mid': '53067', 'vote': 'up', 'slug': 'babys_revenge'},
+            {'mid': '53067', 'vote': 'up', 'slug': 'babys_revenge'},
             # {'mid': '66973', 'vote': 'up', 'slug': 'beerus_yamamoto'},
             # {'mid': '5898', 'vote': 'up', 'slug': 'between_the_lines'},
             # {'mid': '29014', 'vote': 'up', 'slug': 'bitch_girlfriend'},
@@ -613,7 +615,7 @@ class DBExecute:
             # {'mid': '40083', 'vote': 'up', 'slug': 'bulma_no_saikyou_e_no_michi'},
             # {'mid': '68445', 'vote': 'up', 'slug': 'bulma_vs_general_blue'},
             # {'mid': '64873', 'vote': 'up', 'slug': 'bulma_x_oolong'},
-            # {'mid': '44847', 'vote': 'up', 'slug': 'bunny_girl_transformation'},
+            {'mid': '44847', 'vote': 'up', 'slug': 'bunny_girl_transformation'},
             # {'mid': '57409', 'vote': 'up', 'slug': 'burning_road'},
             # {'mid': '24237', 'vote': 'up', 'slug': 'busty_android_wants_to_dominate_the_world'},
             # {'mid': '32850', 'vote': 'up', 'slug': 'cell_no_esa'},
@@ -624,18 +626,18 @@ class DBExecute:
             # {'mid': '11101', 'vote': 'up', 'slug': 'dragon_ball_eb'},
             # {'mid': '11786', 'vote': 'up', 'slug': 'dragon_ball_h'},
             # {'mid': '30215', 'vote': 'up', 'slug': 'dragon_ball_having_sex_with_your_lovers_mom'},
-            # {'mid': '12957', 'vote': 'up', 'slug': 'dragon_road'},
-            # {'mid': '51540', 'vote': 'up', 'slug': 'dragon_road_fivehundredfiftyfive'},
+            {'mid': '12957', 'vote': 'up', 'slug': 'dragon_road'},
+            {'mid': '51540', 'vote': 'up', 'slug': 'dragon_road_fivehundredfiftyfive'},
             # {'mid': '51505', 'vote': 'up', 'slug': 'dragonball_h_bessatsu_soushuuhen'},
             # {'mid': '20475', 'vote': 'up', 'slug': 'dragonball_h_extra_issue'},
             # {'mid': '53098', 'vote': 'up', 'slug': 'episode_of_bulma'},
             # {'mid': '14675', 'vote': 'up', 'slug': 'eromangirl'},
             # {'mid': '60073', 'vote': 'up', 'slug': 'fake_namekians'},
             # {'mid': '40131', 'vote': 'up', 'slug': 'fight_in_the_sixth_universe'},
-            # {'mid': '44526', 'vote': 'up', 'slug': 'future_sex_gohan_bulma'},
+            {'mid': '44526', 'vote': 'up', 'slug': 'future_sex_gohan_bulma'},
             # {'mid': '47565', 'vote': 'up', 'slug': 'gohan_vs_erasa'},
             # {'mid': '31470', 'vote': 'up', 'slug': 'hoheto'},
-            # {'mid': '22217', 'vote': 'up', 'slug': 'its_hard_work'},
+            {'mid': '22217', 'vote': 'up', 'slug': 'its_hard_work'},
             # {'mid': '14276', 'vote': 'up', 'slug': 'kame_sennin_no_bitch'},
             # {'mid': '63566', 'vote': 'up', 'slug': 'lots_of_sex_in_the_future'},
             # {'mid': '44958', 'vote': 'up', 'slug': 'lunch_black_love'},
@@ -644,8 +646,8 @@ class DBExecute:
             # {'mid': '67484', 'vote': 'up', 'slug': 'no_one_can_go_against_beerus'},
             # {'mid': '56434', 'vote': 'up', 'slug': 'no_one_disobeys_beerus'},
             # {'mid': '38926', 'vote': 'up', 'slug': 'oolong_cheats_on_bulma'},
-            # {'mid': '58200', 'vote': 'up', 'slug': 'pafupafu_dragon_ball_z_versus'},
-            # {'mid': '63881', 'vote': 'up', 'slug': 'paradise_or_hell_snake_princess_hospitality'},
+            {'mid': '58200', 'vote': 'up', 'slug': 'pafupafu_dragon_ball_z_versus'},
+            {'mid': '63881', 'vote': 'up', 'slug': 'paradise_or_hell_snake_princess_hospitality'},
             # {'mid': '34000', 'vote': 'up', 'slug': 'punishment_in_pilafs_castle'},
             # {'mid': '26827', 'vote': 'up', 'slug': 'rape_the_heroine'},
             # {'mid': '44818', 'vote': 'up', 'slug': 'ryona_budokai'},
@@ -779,7 +781,185 @@ class DBExecute:
             print(f"Processo finalizado. {TOTAL_REQUESTS + UPS_VARIAVEIS} requisições foram enviadas.")
             time.sleep(2)
     def execute4():
-        pass
+        import requests
+        import concurrent.futures
+        
+        # --- CONFIGURAÇÕES DO SCRIPT ---
+        # O número de vezes que o ciclo de 40 requisições será repetido
+        NUM_CICLOS = 1
+        
+        # O número de threads simultâneas a cada ciclo
+        NUM_THREADS = 30
+        
+        # --- CONFIGURAÇÕES DA REQUISIÇÃO ---
+        URL = 'https://hentai2read.com/api'
+        
+        # Lista de alvos. Você pode adicionar mais dicionários aqui.
+        # O script usará o primeiro item da lista (alvo_atual).
+        # ALVOS = [
+        #     # {'mid': '8988', 'slug': 'made_in_heaven_jupiter'},
+        #     # {'mid': '3675', 'slug': 'tubala_bells'},
+        #     # {'mid': '3498', 'slug': 'sex_pistols'},
+        #     # {'mid': '3032', 'slug': 'pearl_jam'},
+        #     # {'mid': '3649', 'slug': 'beach_boy'},
+        #     # {'mid': '3596', 'slug': 'welkome_to_tokoharusou'},
+        #     {'mid': '26602', 'slug': 'love_triangle_z'},
+        # ]
+        ALVOS = [
+            # {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},
+            # {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
+            # {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
+            {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
+            {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
+            {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
+            {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
+            {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
+            {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
+            {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
+            {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
+            {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
+            {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
+            {'mid': '50438', 'vote': 'up', 'slug': 'sudden_harem_life_after'},
+            {'mid': '21974', 'vote': 'up', 'slug': 'yukemuri_harem_monogatari'},
+            {'mid': '44329', 'vote': 'up', 'slug': 'nanakas_paradise'},
+            
+            {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+            {'mid': '21154', 'vote': 'up', 'slug': 'makipet'},
+            {'mid': '22575', 'vote': 'up', 'slug': 'dangan_archive'},
+            {'mid': '20203', 'vote': 'up', 'slug': 'shoujo_kaishun'},
+            {'mid': '26338', 'vote': 'up', 'slug': 'bibi_collection'},
+            
+            # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
+            # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
+            {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
+            {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
+            # kimi_wa_akogare_no_tawawa
+            {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
+            {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
+            {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
+            {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
+            
+            {'mid': '21990', 'vote': 'up', 'slug': 'bullied_revenge_hypnosis'},
+            {'mid': '38779', 'vote': 'up', 'slug': 'family_control'},
+            {'mid': '17542', 'vote': 'up', 'slug': 'hypnosis_sex_guidance'},
+            {'mid': '31449', 'vote': 'up', 'slug': 'dakuon'},
+            
+            {'mid': '2572', 'vote': 'up', 'slug': 'pink_cherry_pie'},
+            {'mid': '6731', 'vote': 'up', 'slug': 'mon_mon_animal_girl'},
+            {'mid': '2431', 'vote': 'up', 'slug': 'momozono_gakuen'},
+            {'mid': '4422', 'vote': 'up', 'slug': 'purupuru_milk_feeling'},
+            {'mid': '31449', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
+            
+        ]
+        
+        
+        # Selecione o alvo para esta execução
+        # alvo_atual = ALVOS[5] # Usando 'made_in_heaven'
+        
+        # Headers e Data são montados dinamicamente com base no alvo_atual
+        # HEADERS = {
+        #     'accept': 'application/json, text/javascript, */*; q=0.01',
+        #     'accept-language': 'pt-BR,pt;q=0.9',
+        #     'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        #     'origin': 'https://hentai2read.com',
+        #     'priority': 'u=1, i',
+        #     'referer': f'https://hentai2read.com/{alvo_atual["slug"]}/',
+        #     'sec-ch-ua': '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
+        #     'sec-ch-ua-mobile': '?0',
+        #     'sec-ch-ua-platform': '"Chrome OS"',
+        #     'sec-fetch-dest': 'empty',
+        #     'sec-fetch-mode': 'cors',
+        #     'sec-fetch-site': 'same-origin',
+        #     'user-agent': 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+        #     'x-requested-with': 'XMLHttpRequest',
+        # }
+        
+        # COOKIES = {
+        #     'pfs': '11101100100',
+        #     'zone-closed-5160176': 'true',
+        #     'zone-cap-5181220': '1;1761245087',
+        # }
+        
+        # DATA = {
+        #     'controller': 'manga',
+        #     # 'action': 'views',
+        #     'action': 'rating',
+        #     'mid': alvo_atual['mid'],
+        #     'score': '5000',
+        # }
+        
+        
+        def enviar_requisicao(worker_id, ciclo_atual):
+            """
+            Função que será executada por cada thread.
+            Envia uma única requisição POST e trata a resposta.
+            """
+            try:
+                response = requests.post(URL, headers=HEADERS, cookies=COOKIES, data=DATA)
+                response.raise_for_status()  # Levanta um erro para códigos de status HTTP 4xx ou 5xx
+                if worker_id %1000 == 0:
+                    print(f"[Ciclo {ciclo_atual} | Thread {worker_id}] Sucesso! Status: {response.status_code}, Resposta: {response.json()}")
+                return response.status_code
+        
+            except requests.exceptions.HTTPError as e:
+                print(f"[Ciclo {ciclo_atual} | Thread {worker_id}] Erro HTTP! Status: {e.response.status_code}, Resposta: {e.response.text}")
+            except requests.exceptions.RequestException as e:
+                print(f"[Ciclo {ciclo_atual} | Thread {worker_id}] ERRO na requisição: {e}")
+            except ValueError: # Ocorre se response.json() falhar
+                print(f"[Ciclo {ciclo_atual} | Thread {worker_id}] Resposta não é um JSON válido: {response.text}")
+        
+            return None
+        
+        # --- EXECUÇÃO DO SCRIPT ---
+        # if __name__ == "__main__":
+        for alvo_atual2 in ALVOS:
+            print(f"Iniciando disparos para o alvo: {alvo_atual2['slug']} (mid: {alvo_atual2['mid']})")
+            HEADERS = {
+                'accept': 'application/json, text/javascript, */*; q=0.01',
+                'accept-language': 'pt-BR,pt;q=0.9',
+                'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                'origin': 'https://hentai2read.com',
+                'priority': 'u=1, i',
+                'referer': f'https://hentai2read.com/{alvo_atual2["slug"]}/',
+                'sec-ch-ua': '"Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"',
+                'sec-ch-ua-mobile': '?0',
+                'sec-ch-ua-platform': '"Chrome OS"',
+                'sec-fetch-dest': 'empty',
+                'sec-fetch-mode': 'cors',
+                'sec-fetch-site': 'same-origin',
+                'user-agent': 'Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+                'x-requested-with': 'XMLHttpRequest',
+            }
+    
+            COOKIES = {
+                'pfs': '11101100100',
+                'zone-closed-5160176': 'true',
+                'zone-cap-5181220': '1;1761245087',
+            }
+            DATA = {
+                'controller': 'manga',
+                # 'action': 'views',
+                'action': 'rating',
+                'mid': alvo_atual2['mid'],
+                'score': '999999999',
+                # 'score': '50000',
+            }
+            for i in range(NUM_CICLOS):
+                ciclo_num = i + 1
+                print(f"--- INICIANDO CICLO {ciclo_num}/{NUM_CICLOS} ---")
+    
+                # Cria um pool de threads que executará as 40 tarefas
+                with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
+                    # Submete a função 'enviar_requisicao' para ser executada 40 vezes em paralelo
+                    futures = [executor.submit(enviar_requisicao, worker_id, ciclo_num) for worker_id in range(1, NUM_THREADS + 1)]
+    
+                    # O bloco 'with' aguarda a conclusão de todas as 40 threads
+                    # antes de continuar para o próximo ciclo do loop 'for'
+                    concurrent.futures.wait(futures)
+    
+                print(f"--- CICLO {ciclo_num}/{NUM_CICLOS} FINALIZADO ---\n")
+
     def execute3():    
         import requests
         import concurrent.futures
@@ -791,9 +971,9 @@ class DBExecute:
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 200 #entre 1000 e 7000
         MULTIPLIER = 100
-        EXTRA_UP = ['45050','14548','21990','38779','5589','14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['5589','2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','45050','14548','21990','38779']
-        EXTRA_PLUS = ['5589','3032','3649','3662','3648','8988']
+        EXTRA_UP = ['3041','45050','14548','21990','38779','5589','14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['3041','5589','2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','45050','14548','21990','38779']
+        EXTRA_PLUS = ['14548','5589','3032','3649','3662','3648','8988','3041','14548',]
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
         NUM_THREADS = 200
         # 3041tower_of_gray
@@ -807,15 +987,47 @@ class DBExecute:
         ALVOS = [
             # {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
             # {'mid': '41278', 'vote': 'up', 'slug': 'horny_isekai_elfs_evil_eye'},
-            # {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+# tales_of_harem_in_another_world
+            {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
+            {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
+            {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
+            {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
+            {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
+            {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
+            {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
+            {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
+            {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
+            {'mid': '50438', 'vote': 'up', 'slug': 'sudden_harem_life_after'},
+            {'mid': '21974', 'vote': 'up', 'slug': 'yukemuri_harem_monogatari'},
+            {'mid': '44329', 'vote': 'up', 'slug': 'nanakas_paradise'},
+            
+            {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
+            {'mid': '21154', 'vote': 'up', 'slug': 'makipet'},
+            {'mid': '22575', 'vote': 'up', 'slug': 'dangan_archive'},
+            {'mid': '20203', 'vote': 'up', 'slug': 'shoujo_kaishun'},
+            {'mid': '26338', 'vote': 'up', 'slug': 'bibi_collection'},
+            
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
             # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
             {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
+            {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
+            # kimi_wa_akogare_no_tawawa
             {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
+            {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
+            {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
+            {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
+            
             {'mid': '21990', 'vote': 'up', 'slug': 'bullied_revenge_hypnosis'},
             {'mid': '38779', 'vote': 'up', 'slug': 'family_control'},
-            {'mid': '17542', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            {'mid': '17542', 'vote': 'up', 'slug': 'hypnosis_sex_guidance'},
             {'mid': '31449', 'vote': 'up', 'slug': 'dakuon'},
+            
+            {'mid': '2572', 'vote': 'up', 'slug': 'pink_cherry_pie'},
+            {'mid': '6731', 'vote': 'up', 'slug': 'mon_mon_animal_girl'},
+            {'mid': '2431', 'vote': 'up', 'slug': 'momozono_gakuen'},
+            {'mid': '4422', 'vote': 'up', 'slug': 'purupuru_milk_feeling'},
+            {'mid': '31449', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
             
             
             {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},#an_elder_sister
@@ -829,11 +1041,11 @@ class DBExecute:
             {'mid': '3041', 'vote': 'up', 'slug': 'tower_of_gray'},
             {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
             # {'mid': '48973', 'vote': 'up', 'slug': 'hypnotism_is_just_make_believe'},
-            {'mid': '3648', 'vote': 'up', 'slug': 'aqua_necklace'},
-            {'mid': '3685', 'vote': 'up', 'slug': 'burning_down_the_house'},
-            {'mid': '3654', 'vote': 'up', 'slug': 'in_a_silent_way'},
+            # {'mid': '3648', 'vote': 'up', 'slug': 'aqua_necklace'},
+            # {'mid': '3685', 'vote': 'up', 'slug': 'burning_down_the_house'},
+            # {'mid': '3654', 'vote': 'up', 'slug': 'in_a_silent_way'},
             # {'mid': '26602', 'vote': 'up', 'slug': 'love_triangle_z'},#ano_hi_no_tegomesan
-            {'mid': '13486', 'vote': 'up', 'slug': 'ano_hi_no_tegomesan'},
+            # {'mid': '13486', 'vote': 'up', 'slug': 'ano_hi_no_tegomesan'},
             # {'mid': '7639', 'vote': 'up', 'slug': 'another_one_bite_the_dust'},
             # {'mid': '3650', 'vote': 'up', 'slug': 'cream_starter'},
             # {'mid': '33288', 'vote': 'up', 'slug': 'flirtation_sped_forward'},
@@ -874,7 +1086,7 @@ class DBExecute:
             # {'mid': '32975', 'vote': 'up', 'slug': 'uncanny_eighthwonder'},
             {'mid': '17279', 'vote': 'up', 'slug': 'oyako_heroine_funtousu'},
             {'mid': '10507', 'vote': 'up', 'slug': 'one_hurricane'},
-            # {'mid': '62736', 'vote': 'up', 'slug': 'daughter_falling_into_stepfather'},
+            {'mid': '62736', 'vote': 'up', 'slug': 'daughter_falling_into_stepfather'},
             # {'mid': '9272', 'vote': 'up', 'slug': 'the_working_goddess'},
             {'mid': '34689', 'vote': 'up', 'slug': 'icha_icha_unbalance'},
             {'mid': '4029', 'vote': 'up', 'slug': 'kan_ni_sakura'},
@@ -885,19 +1097,169 @@ class DBExecute:
             # {'mid': '4194', 'vote': 'up', 'slug': 'yuri_and_friends_mai_special'},
             # {'mid': '4195', 'vote': 'up', 'slug': 'mary_special'},
             # {'mid': '4190', 'vote': 'up', 'slug': 'yuri_and_friends'},
-            # {'mid': '3560', 'vote': 'up', 'slug': 'rei_slave_to_the_grind'},
+            {'mid': '3560', 'vote': 'up', 'slug': 'rei_slave_to_the_grind'},
             # {'mid': '2967', 'vote': 'up', 'slug': 'a_housewifes_temptation'},
+            {'mid': '2630', 'vote': 'up', 'slug': 'cheerism'},
+            {'mid': '2058', 'vote': 'up', 'slug': 'milk_mama'},
+            {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
+            {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
+            # {'mid': '21434', 'vote': 'up', 'slug': 'the_archangel_of_love_love_mary'},
+            {'mid': '31845', 'vote': 'up', 'slug': 'lust_kiss'},
+            {'mid': '28496', 'vote': 'up', 'slug': 'lovemare_ge'},
+            {'mid': '24005', 'vote': 'up', 'slug': 'lovemare_jou'},
+            # {'mid': '40603', 'vote': 'up', 'slug': 'otherworld_harem_paradise'},
+            # {'mid': '3419', 'vote': 'up', 'slug': 'impossible'},
+            {'mid': '4658', 'vote': 'up', 'slug': 'momoiro_passion'},
+            {'mid': '2245', 'vote': 'up', 'slug': 'oh_miss_nanase'},
+            # {'mid': '6483', 'vote': 'up', 'slug': 'my_neighbors_are_aliens'},
+            # {'mid': '2055', 'vote': 'up', 'slug': 'maid_in_teacher'},
+        
+            {'mid': '19129', 'vote': 'up', 'slug': 'milf_of_steel'},
+            {'mid': '17689', 'vote': 'up', 'slug': 'amazing_eighth_wonder'},
+            {'mid': '20876', 'vote': 'up', 'slug': 'dont_meddle_in_my_daughter'},
+            {'mid': '32975', 'vote': 'up', 'slug': 'uncanny_eighthwonder'},
+            {'mid': '17279', 'vote': 'up', 'slug': 'oyako_heroine_funtousu'},
+            {'mid': '3560', 'vote': 'up', 'slug': 'rei_slave_to_the_grind'},
+            {'mid': '8039', 'vote': 'up', 'slug': 'st_dead_or_alive_highschool'},
+            # {'mid': '5367', 'vote': 'up', 'slug': 'h.sas4'},
             # {'mid': '2630', 'vote': 'up', 'slug': 'cheerism'},
-            # {'mid': '2058', 'vote': 'up', 'slug': 'milk_mama'},
-            # {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
-            # {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
+            {'mid': '2058', 'vote': 'up', 'slug': 'milk_mama'},
+            {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
+            {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
             # {'mid': '21434', 'vote': 'up', 'slug': 'the_archangel_of_love_love_mary'},
             # {'mid': '31845', 'vote': 'up', 'slug': 'lust_kiss'},
             # {'mid': '28496', 'vote': 'up', 'slug': 'lovemare_ge'},
             # {'mid': '24005', 'vote': 'up', 'slug': 'lovemare_jou'},
             # {'mid': '40603', 'vote': 'up', 'slug': 'otherworld_harem_paradise'},
-            # {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
+            # {'mid': '52251', 'vote': 'up', 'slug': 'hands_on_draining_with_three_succubus_sister'},
+            # {'mid': '3261', 'vote': 'up', 'slug': 'dorei_usagi_to_anthony'},
+            # {'mid': '4644', 'vote': 'up', 'slug': 'beautiful_girls_club'},
+            # {'mid': '4822', 'vote': 'up', 'slug': 'shoujo_x_shoujo_x_shoujo'},
+            # {'mid': '13736', 'vote': 'up', 'slug': 'lingua_franca'},
+            {'mid': '3252', 'vote': 'up', 'slug': 'pour_me_milk'},
+            # {'mid': '61454', 'vote': 'up', 'slug': 'yuita_ma'},
+            {'mid': '17133', 'vote': 'up', 'slug': 'sister_breeder'},
+            {'mid': '50107', 'vote': 'up', 'slug': 'ima_real'},
+            {'mid': '60408', 'vote': 'up', 'slug': 'takane_tama'},
+            {'mid': '7321', 'vote': 'up', 'slug': 'sutotama'},
+            {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
+            {'mid': '13974', 'vote': 'up', 'slug': 'reitama'},
+            # {'mid': '60371', 'vote': 'up', 'slug': 'outama_king_of_soul'},
+            # {'mid': '19913', 'vote': 'up', 'slug': 'maritama_renshuuchou'},
+            {'mid': '14978', 'vote': 'up', 'slug': 'mana_tama_plus'},
+            # {'mid': '4483', 'vote': 'up', 'slug': 'mamotama'},
+            # {'mid': '19072', 'vote': 'up', 'slug': 'maitama'},
+            # {'mid': '9505', 'vote': 'up', 'slug': 'eritama_eri_love_middleage'},
+            {'mid': '4472', 'vote': 'up', 'slug': 'doritama'},
+            {'mid': '11853', 'vote': 'up', 'slug': 'misgard_feoh'},
+            
+            # {'mid': '23377', 'vote': 'up', 'slug': 'c93_rakugakichou'},
+            # {'mid': '25289', 'vote': 'up', 'slug': 'akanes_in_a_pinch'},
+            # {'mid': '8751', 'vote': 'up', 'slug': 'yui_chan_to_issho'},
+            # {'mid': '2507', 'vote': 'up', 'slug': 'toraburu_soushuuhen'},
+            # {'mid': '3327', 'vote': 'up', 'slug': 'nakaba'},
+            # {'mid': '6971', 'vote': 'up', 'slug': 'titikei'},
+            # {'mid': '3811', 'vote': 'up', 'slug': 'insei_iroiro'},
+            # {'mid': '3326', 'vote': 'up', 'slug': 'mikanal'},
+            # {'mid': '4058', 'vote': 'up', 'slug': 'harimaro'},
+            # {'mid': '3311', 'vote': 'up', 'slug': 'harima_x'},
+            # {'mid': '3305', 'vote': 'up', 'slug': 'cambell_juice'},
+            # {'mid': '34179', 'vote': 'up', 'slug': 'bujideta'},
+            # {'mid': '50945', 'vote': 'up', 'slug': 'konoha_don_tokumori'},
+            # {'mid': '16444', 'vote': 'up', 'slug': 'ble_nana'},
+            # {'mid': '47688', 'vote': 'up', 'slug': 'kage_hinate_ni_sakura_saku'},
+            # {'mid': '10605', 'vote': 'up', 'slug': 'toushatei_naruto'},
+            # {'mid': '44687', 'vote': 'up', 'slug': 'pink_no_bakajikara'},
+            # {'mid': '5533', 'vote': 'up', 'slug': 'saboten_nindou'},
+            # {'mid': '14079', 'vote': 'up', 'slug': 'saboten_campus'},
+            # {'mid': '48453', 'vote': 'up', 'slug': 'saboten'},
+            # {'mid': '55886', 'vote': 'up', 'slug': 'narutophole'},
+            # {'mid': '58418', 'vote': 'up', 'slug': 'narutop_pink'},
+            # {'mid': '49259', 'vote': 'up', 'slug': 'konoha_don'},
+            # {'mid': '45222', 'vote': 'up', 'slug': 'konoha_saboten'},
+            # {'mid': '45488', 'vote': 'up', 'slug': 'inniku_koushin'},
+            # {'mid': '31371', 'vote': 'up', 'slug': 'ikimono_gakari'},
+            # {'mid': '48617', 'vote': 'up', 'slug': 'hyakugo_no_jutsu'},
+            # {'mid': '32567', 'vote': 'up', 'slug': 'haouju_saboten'},
+            # {'mid': '21123', 'vote': 'up', 'slug': 'botan_to_sakura'},
+            # {'mid': '25373', 'vote': 'up', 'slug': 'arashi_no_bouken'},
+            # {'mid': '56849', 'vote': 'up', 'slug': 'pink_yu_gi'},
+            # {'mid': '56203', 'vote': 'up', 'slug': 'black_magician_girl_forced_orgasm_duel'},
+            # {'mid': '25628', 'vote': 'up', 'slug': 'dark_ceremony_edition'},
+            # {'mid': '32997', 'vote': 'up', 'slug': 'endless_my_turn'},
+            # {'mid': '60792', 'vote': 'up', 'slug': 'iron_rose'},
+            # {'mid': '20630', 'vote': 'up', 'slug': 'ishizus_secret_draw'},
+            # {'mid': '44421', 'vote': 'up', 'slug': 'naughty_anime_r'},
+            # {'mid': '26647', 'vote': 'up', 'slug': 'overlay_magic'},
+            # {'mid': '28713', 'vote': 'up', 'slug': 'pleasure_game'},
+            # {'mid': '36189', 'vote': 'up', 'slug': 'seinen_miracle_jump'},
+            # {'mid': '35643', 'vote': 'up', 'slug': 'sex_life_with_servant_bmg'},
+            # {'mid': '47561', 'vote': 'up', 'slug': 'together_with_dark_magician_girl'},
         
+            # {'mid': '17035', 'vote': 'up', 'slug': 'kage_hinata_ni_saku'},
+            {'mid': '36608', 'vote': 'up', 'slug': 'karakishi_youhen_dan_compliation'},
+            {'mid': '18065', 'vote': 'up', 'slug': 'orange_pie'},
+            {'mid': '3190', 'vote': 'up', 'slug': 'bonneys_defeat'},
+            # {'mid': '31692', 'vote': 'up', 'slug': 'chop_stick'},
+            # {'mid': '9684', 'vote': 'up', 'slug': 'dorei_kentoushi_rebecca'},
+            # {'mid': '5568', 'vote': 'up', 'slug': 'grandline_chronicle_colorful_sainyuu'},
+            {'mid': '8211', 'vote': 'up', 'slug': 'instinct_world'},
+            # {'mid': '33114', 'vote': 'up', 'slug': 'kaizoku_jingi'},
+            {'mid': '11189', 'vote': 'up', 'slug': 'koukai_soushuuhen'},
+            {'mid': '3201', 'vote': 'up', 'slug': 'love_love_hurricane'},
+            {'mid': '3781', 'vote': 'up', 'slug': 'love_2_hurricane'},
+            {'mid': '6012', 'vote': 'up', 'slug': 'mero_mero_girls_new_world'},
+            {'mid': '3541', 'vote': 'up', 'slug': 'snake_princess'},
+            {'mid': '22615', 'vote': 'up', 'slug': 'tifa_sai'},
+            {'mid': '3548', 'vote': 'up', 'slug': 'tifa_hard'},
+            {'mid': '3547', 'vote': 'up', 'slug': 'tifa_climax'},
+            {'mid': '3546', 'vote': 'up', 'slug': 'tifa_before_climax'},
+            # {'mid': '3549', 'vote': 'up', 'slug': 'uzumaki_hanataba'},
+            {'mid': '7726', 'vote': 'up', 'slug': 'virgin_idol'},
+            # {'mid': '3518', 'vote': 'up', 'slug': 'hinata'},
+            {'mid': '19075', 'vote': 'up', 'slug': 'the_only_shame'},
+            # {'mid': '38088', 'vote': 'up', 'slug': 'an_ancient_tradition_young_wife_is_harassed'},
+            # {'mid': '6818', 'vote': 'up', 'slug': '18_gou_ga_saimin_ge_ntr_reru_hon'},
+            # {'mid': '25894', 'vote': 'up', 'slug': '2_for_1_delicious_fun'},
+            {'mid': '67969', 'vote': 'up', 'slug': '2x1_lunch'},
+            # {'mid': '38992', 'vote': 'up', 'slug': 'aim_at_planet_nameki'},
+            {'mid': '52330', 'vote': 'up', 'slug': 'android_eighteen_vs_master_roshi'},
+            # {'mid': '25265', 'vote': 'up', 'slug': 'android_21s_remodeling_plan'},
+            # {'mid': '16443', 'vote': 'up', 'slug': 'android_n18_and_mrsatan'},
+            {'mid': '53067', 'vote': 'up', 'slug': 'babys_revenge'},
+            # {'mid': '66973', 'vote': 'up', 'slug': 'beerus_yamamoto'},
+            # {'mid': '5898', 'vote': 'up', 'slug': 'between_the_lines'},
+            # {'mid': '29014', 'vote': 'up', 'slug': 'bitch_girlfriend'},
+            # {'mid': '32518', 'vote': 'up', 'slug': 'black_defeats_the_hero_of_the_future_the_sacrifice_of_the_faithful_bride'},
+            # {'mid': '38101', 'vote': 'up', 'slug': 'bulma_and_friends'},
+            # {'mid': '46102', 'vote': 'up', 'slug': 'bulma_meets_mr_popo_sex_inside_the_mysterious_spaceship'},
+            # {'mid': '40083', 'vote': 'up', 'slug': 'bulma_no_saikyou_e_no_michi'},
+            # {'mid': '68445', 'vote': 'up', 'slug': 'bulma_vs_general_blue'},
+            # {'mid': '64873', 'vote': 'up', 'slug': 'bulma_x_oolong'},
+            {'mid': '44847', 'vote': 'up', 'slug': 'bunny_girl_transformation'},
+            # {'mid': '57409', 'vote': 'up', 'slug': 'burning_road'},
+            # {'mid': '24237', 'vote': 'up', 'slug': 'busty_android_wants_to_dominate_the_world'},
+            # {'mid': '32850', 'vote': 'up', 'slug': 'cell_no_esa'},
+            # {'mid': '66127', 'vote': 'up', 'slug': 'change_yamamoto'},
+            # {'mid': '63417', 'vote': 'up', 'slug': 'chichi_chi_chichi'},
+            {'mid': '25103', 'vote': 'up', 'slug': 'dangan_ball'},
+            # {'mid': '4473', 'vote': 'up', 'slug': 'dragon_award'},
+            # {'mid': '11101', 'vote': 'up', 'slug': 'dragon_ball_eb'},
+            # {'mid': '11786', 'vote': 'up', 'slug': 'dragon_ball_h'},
+            # {'mid': '30215', 'vote': 'up', 'slug': 'dragon_ball_having_sex_with_your_lovers_mom'},
+            {'mid': '12957', 'vote': 'up', 'slug': 'dragon_road'},
+            {'mid': '51540', 'vote': 'up', 'slug': 'dragon_road_fivehundredfiftyfive'},
+            # {'mid': '60073', 'vote': 'up', 'slug': 'fake_namekians'},
+            {'mid': '44526', 'vote': 'up', 'slug': 'future_sex_gohan_bulma'},
+            # {'mid': '47565', 'vote': 'up', 'slug': 'gohan_vs_erasa'},
+            # {'mid': '31470', 'vote': 'up', 'slug': 'hoheto'},
+            {'mid': '22217', 'vote': 'up', 'slug': 'its_hard_work'},
+            {'mid': '67484', 'vote': 'up', 'slug': 'no_one_can_go_against_beerus'},
+            {'mid': '56434', 'vote': 'up', 'slug': 'no_one_disobeys_beerus'},
+            # {'mid': '38926', 'vote': 'up', 'slug': 'oolong_cheats_on_bulma'},
+            {'mid': '58200', 'vote': 'up', 'slug': 'pafupafu_dragon_ball_z_versus'},
+            {'mid': '63881', 'vote': 'up', 'slug': 'paradise_or_hell_snake_princess_hospitality'},
+            {'mid': '34000', 'vote': 'up', 'slug': 'punishment_in_pilafs_castle'},
         ]
         
         
