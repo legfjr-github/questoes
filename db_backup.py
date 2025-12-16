@@ -351,14 +351,14 @@ class DBExecute:
             {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
             # {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
             # kimi_wa_akogare_no_tawawa
-            {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
-            {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
+            ##{'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            ##{'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
             # {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
             # {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
             # {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
             
-            {'mid': '21990', 'vote': 'up', 'slug': 'bullied_revenge_hypnosis'},
-            {'mid': '38779', 'vote': 'up', 'slug': 'family_control'},
+            ##{'mid': '21990', 'vote': 'up', 'slug': 'bullied_revenge_hypnosis'},
+            ##{'mid': '38779', 'vote': 'up', 'slug': 'family_control'},
             # {'mid': '17542', 'vote': 'up', 'slug': 'hypnosis_sex_guidance'},
             # {'mid': '31449', 'vote': 'up', 'slug': 'dakuon'},
             
