@@ -348,7 +348,7 @@ class DBExecute:
             
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
             # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
-            {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
+            # {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
             # {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
             # kimi_wa_akogare_no_tawawa
             ##{'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
