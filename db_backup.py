@@ -314,6 +314,8 @@ class DBExecute:
         EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611']
         EXTRA_UP3 = ['68870','45432','14548','21990','45050','38779','2169','49826','11611','38779','27016']
         EXTRA_PLUS = ['14548','2815','2169','3649','5589']
+        # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
+        
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
         NUM_THREADS = 350
         # 3041tower_of_gray
@@ -333,7 +335,7 @@ class DBExecute:
             # {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
             # {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
             # {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
-            {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
+            # {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
             # {'mid': '50438', 'vote': 'up', 'slug': 'sudden_harem_life_after'},
             # {'mid': '21974', 'vote': 'up', 'slug': 'yukemuri_harem_monogatari'},
             # {'mid': '44329', 'vote': 'up', 'slug': 'nanakas_paradise'},
