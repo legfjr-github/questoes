@@ -811,6 +811,10 @@ class DBExecute:
                 UPS_VARIAVEIS += MULTIPLIER
                 if UPS_VARIAVEIS < 25000:
                     UPS_VARIAVEIS += MULTIPLIER*1000
+            if alvo_atual['mid'] in EXTRA_PLUS:
+                UPS_VARIAVEIS += 30000
+                if UPS_VARIAVEIS < 80000:
+                    UPS_VARIAVEIS += MULTIPLIER*1000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
             # Usa ThreadPoolExecutor para gerenciar um pool de threads
             with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
