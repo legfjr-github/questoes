@@ -317,7 +317,7 @@ class DBExecute:
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
-        NUM_THREADS = 300
+        NUM_THREADS = 250
         # 3041tower_of_gray
         # 2905yellow_temperance
         # 3662scary_monsters
@@ -377,7 +377,7 @@ class DBExecute:
             # {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
             # {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
             # {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
-            {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
+            # {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
             # {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
             # {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
             # {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
