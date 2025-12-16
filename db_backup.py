@@ -315,7 +315,7 @@ class DBExecute:
         EXTRA_UP3 = ['68870','45432','14548','21990','45050','38779','2169','49826','11611','38779','27016']
         EXTRA_PLUS = ['14548','2815','2169','3649','5589']
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
-        NUM_THREADS = 500
+        NUM_THREADS = 350
         # 3041tower_of_gray
         # 2905yellow_temperance
         # 3662scary_monsters
@@ -325,13 +325,13 @@ class DBExecute:
         # 3685 burning_down_the_house
         # 3654 in_a_silent_way
         ALVOS = [
-            {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
+            # {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
             # {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
             # {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
             # {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
             # {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
-            {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
-            {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
+            # {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
+            # {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
             {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
             {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
             # {'mid': '50438', 'vote': 'up', 'slug': 'sudden_harem_life_after'},
