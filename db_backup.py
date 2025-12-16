@@ -308,12 +308,12 @@ class DBExecute:
         
         # --- CONFIGURAÇÕES DO SCRIPT ---
         # 1. Defina o número TOTAL de requisições que você quer enviar
-        TOTAL_REQUESTS = 30000 #entre 1000 e 7000
+        TOTAL_REQUESTS = 40000 #entre 1000 e 7000
         MULTIPLIER = 20
         EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
         EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611']
         EXTRA_UP3 = ['68870','45432','14548','21990','45050','38779','2169','49826','11611','38779','27016']
-        EXTRA_PLUS = ['14548','2815','2169']
+        EXTRA_PLUS = ['14548','2815','2169','3649','5589']
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
         NUM_THREADS = 500
         # 3041tower_of_gray
@@ -375,7 +375,7 @@ class DBExecute:
             # {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
             # {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
             # {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
-            # {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
+            {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
             # {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
             # {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
             # {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
@@ -400,7 +400,7 @@ class DBExecute:
             # {'mid': '3017', 'vote': 'up', 'slug': 'diver_down'},
             # {'mid': '40339', 'vote': 'up', 'slug': 'oasis_kuroinu_juu'},
             # {'mid': '22442', 'vote': 'up', 'slug': 'ojisan_to_futarikiri'},
-            # {'mid': '3722', 'vote': 'up', 'slug': 'red_hot_chili_peppers'},
+            {'mid': '3722', 'vote': 'down', 'slug': 'red_hot_chili_peppers'},
             # {'mid': '3036', 'vote': 'up', 'slug': 'sheer_heart_attack'},
             # {'mid': '3665', 'vote': 'up', 'slug': 'sky_high'},
             {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
