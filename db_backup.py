@@ -770,8 +770,9 @@ class DBExecute:
                 try:
                     response_data = response.json()
                     if worker_id %100 == 0:
+                        pass
                         # print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
-                        print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
+                        # print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
                 except ValueError:
                     # print(f"[Thread {worker_id}] Sucesso, mas resposta não é JSON! MID: {target_info['mid']}, Status: {response.status_code}, Resposta: {response.text}")
                     pass
@@ -1370,8 +1371,9 @@ class DBExecute:
                 try:
                     response_data = response.json()
                     if worker_id %100 == 0:
+                        pass
                         # print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
-                        print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
+                        # print(f"[Thread {worker_id}] Sucesso! MID: {target_info['mid']}, Voto: {target_info['vote']}, Status: {response.status_code}, Resposta: {response_data}")
                 except ValueError:
                     # print(f"[Thread {worker_id}] Sucesso, mas resposta não é JSON! MID: {target_info['mid']}, Status: {response.status_code}, Resposta: {response.text}")
                     pass
