@@ -310,10 +310,10 @@ class DBExecute:
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 40000 #entre 1000 e 7000
         MULTIPLIER = 20
-        EXTRA_UP = ['14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611']
-        EXTRA_UP3 = ['68870','45432','14548','21990','45050','38779','2169','49826','11611','38779','27016']
-        EXTRA_PLUS = ['14548','2815','2169','3649','5589']
+        EXTRA_UP = ['3032','14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
+        EXTRA_UP3 = ['49826','68870','45432','14548','21990','45050','38779','2169','49826','11611','38779','27016','3032']
+        EXTRA_PLUS = ['14548','2815','2169','3649','5589','3032','49826']
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
@@ -348,11 +348,11 @@ class DBExecute:
             
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
             # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
-            # {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
+            {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
             # {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
             # kimi_wa_akogare_no_tawawa
-            ##{'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
-            ##{'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
+            {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
             # {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
             # {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
             # {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
@@ -367,7 +367,7 @@ class DBExecute:
             # {'mid': '2431', 'vote': 'up', 'slug': 'momozono_gakuen'},
             # {'mid': '4422', 'vote': 'up', 'slug': 'purupuru_milk_feeling'},
             # {'mid': '31449', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
-            # {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
+            {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
             # {'mid': '41278', 'vote': 'up', 'slug': 'horny_isekai_elfs_evil_eye'},
             # {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
@@ -376,13 +376,13 @@ class DBExecute:
             # {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},
             # {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
             # {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
-            # {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
-            # {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
+            {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
+            {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
             # {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
             # {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
             # {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
             # {'mid': '3041', 'vote': 'up', 'slug': 'tower_of_gray'},
-            # {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
+            {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
             # {'mid': '48973', 'vote': 'up', 'slug': 'hypnotism_is_just_make_believe'},
             # {'mid': '3648', 'vote': 'up', 'slug': 'aqua_necklace'},
             # {'mid': '3685', 'vote': 'up', 'slug': 'burning_down_the_house'},
@@ -397,15 +397,15 @@ class DBExecute:
             # {'mid': '3486', 'vote': 'up', 'slug': 'hierophant_green'},
             # {'mid': '63520', 'vote': 'up', 'slug': 'just_for_tonight_ill_be_your_bitch'},
             # {'mid': '19443', 'vote': 'down', 'slug': 'kayoubi_no_yurameki'},
-            {'mid': '14074', 'vote': 'down', 'slug': 'magicians_red'},
+            # {'mid': '14074', 'vote': 'down', 'slug': 'magicians_red'},
             # {'mid': '3655', 'vote': 'up', 'slug': 'killer_queen'},
             # {'mid': '3017', 'vote': 'up', 'slug': 'diver_down'},
             # {'mid': '40339', 'vote': 'up', 'slug': 'oasis_kuroinu_juu'},
             # {'mid': '22442', 'vote': 'up', 'slug': 'ojisan_to_futarikiri'},
-            {'mid': '3722', 'vote': 'down', 'slug': 'red_hot_chili_peppers'},
+            # {'mid': '3722', 'vote': 'down', 'slug': 'red_hot_chili_peppers'},
             # {'mid': '3036', 'vote': 'up', 'slug': 'sheer_heart_attack'},
             # {'mid': '3665', 'vote': 'up', 'slug': 'sky_high'},
-            {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
+            # {'mid': '5589', 'vote': 'up', 'slug': 'soft_and_wet'},
             # {'mid': '8040', 'vote': 'up', 'slug': 'submission_super_moon'},
             # {'mid': '3671', 'vote': 'up', 'slug': 'superfly'},
             # {'mid': '33063', 'vote': 'up', 'slug': 'tohth'},
@@ -532,9 +532,9 @@ class DBExecute:
             # {'mid': '17616', 'vote': 'up', 'slug': 'estral_mature_woman'},
             # {'mid': '9893', 'vote': 'up', 'slug': 'dream_reality'},
             # {'mid': '2125', 'vote': 'up', 'slug': 'as_mama_likes_it'},
-            # {'mid': '4945', 'vote': 'up', 'slug': 'abno_madams'},
+            {'mid': '4945', 'vote': 'up', 'slug': 'abno_madams'},
             # {'mid': '4682', 'vote': 'up', 'slug': 'the_pretty_peach_hip'},
-            {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
+            # {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
             {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
             # {'mid': '21434', 'vote': 'up', 'slug': 'the_archangel_of_love_love_mary'},
             # {'mid': '31845', 'vote': 'up', 'slug': 'lust_kiss'},
@@ -552,15 +552,15 @@ class DBExecute:
             # {'mid': '50107', 'vote': 'up', 'slug': 'ima_real'},
             # {'mid': '60408', 'vote': 'up', 'slug': 'takane_tama'},
             # {'mid': '7321', 'vote': 'up', 'slug': 'sutotama'},
-            {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
-            {'mid': '13974', 'vote': 'up', 'slug': 'reitama'},
+            # {'mid': '4491', 'vote': 'up', 'slug': 'sakitama'},
+            # {'mid': '13974', 'vote': 'up', 'slug': 'reitama'},
             # {'mid': '60371', 'vote': 'up', 'slug': 'outama_king_of_soul'},
             # {'mid': '19913', 'vote': 'up', 'slug': 'maritama_renshuuchou'},
-            {'mid': '14978', 'vote': 'up', 'slug': 'mana_tama_plus'},
+            # {'mid': '14978', 'vote': 'up', 'slug': 'mana_tama_plus'},
             # {'mid': '4483', 'vote': 'up', 'slug': 'mamotama'},
             # {'mid': '19072', 'vote': 'up', 'slug': 'maitama'},
             # {'mid': '9505', 'vote': 'up', 'slug': 'eritama_eri_love_middleage'},
-            {'mid': '4472', 'vote': 'up', 'slug': 'doritama'},
+            # {'mid': '4472', 'vote': 'up', 'slug': 'doritama'},
             {'mid': '11853', 'vote': 'up', 'slug': 'misgard_feoh'},
             
             # {'mid': '23377', 'vote': 'up', 'slug': 'c93_rakugakichou'},
@@ -677,7 +677,7 @@ class DBExecute:
             # {'mid': '14675', 'vote': 'up', 'slug': 'eromangirl'},
             # {'mid': '60073', 'vote': 'up', 'slug': 'fake_namekians'},
             # {'mid': '40131', 'vote': 'up', 'slug': 'fight_in_the_sixth_universe'},
-            {'mid': '44526', 'vote': 'up', 'slug': 'future_sex_gohan_bulma'},
+            # {'mid': '44526', 'vote': 'up', 'slug': 'future_sex_gohan_bulma'},
             # {'mid': '47565', 'vote': 'up', 'slug': 'gohan_vs_erasa'},
             # {'mid': '31470', 'vote': 'up', 'slug': 'hoheto'},
             # {'mid': '22217', 'vote': 'up', 'slug': 'its_hard_work'},
