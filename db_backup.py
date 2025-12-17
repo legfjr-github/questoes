@@ -308,12 +308,12 @@ class DBExecute:
         
         # --- CONFIGURAÇÕES DO SCRIPT ---
         # 1. Defina o número TOTAL de requisições que você quer enviar
-        TOTAL_REQUESTS = 40000 #entre 1000 e 7000
+        TOTAL_REQUESTS = 50000 #entre 1000 e 7000
         MULTIPLIER = 20
         EXTRA_UP = ['3032','14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['2169','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
-        EXTRA_UP3 = ['49826','68870','45432','14548','21990','45050','38779','2169','49826','11611','38779','27016','3032']
-        EXTRA_PLUS = ['14548','2815','2169','3649','5589','3032','49826']
+        EXTRA_UP2 = ['2169','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
+        EXTRA_UP3 = ['49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
+        EXTRA_PLUS = ['14548','2815','2169','3649','5589','3032','49826','8988']
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
@@ -327,7 +327,7 @@ class DBExecute:
         # 3685 burning_down_the_house
         # 3654 in_a_silent_way
         ALVOS = [
-            # {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
+            {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
             # {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
             # {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
             # {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
@@ -373,7 +373,7 @@ class DBExecute:
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
             # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
             
-            # {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},
+            {'mid': '8988', 'vote': 'up', 'slug': 'made_in_heaven_jupiter'},
             # {'mid': '3675', 'vote': 'up', 'slug': 'tubala_bells'},
             # {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
             {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
