@@ -329,10 +329,10 @@ class DBExecute:
         # 3654 in_a_silent_way
         ALVOS = [
             # bai asuka
-            {'mid': '18828', 'vote': 'up', 'slug': 'hametorare'},
-            {'mid': '28137', 'vote': 'up', 'slug': 'mating_with_mother'},
-            {'mid': '39823', 'vote': 'up', 'slug': 'shokurei'},
-            {'mid': '49274', 'vote': 'up', 'slug': 'my_mother_is_my_friends_slave'},
+            # {'mid': '18828', 'vote': 'up', 'slug': 'hametorare'},
+            # {'mid': '28137', 'vote': 'up', 'slug': 'mating_with_mother'},
+            # {'mid': '39823', 'vote': 'up', 'slug': 'shokurei'},
+            # {'mid': '49274', 'vote': 'up', 'slug': 'my_mother_is_my_friends_slave'},
             {'mid': '20439', 'vote': 'up', 'slug': 'impregnated_mother'},
             # BOSSHI
             {'mid': '2705', 'vote': 'up', 'slug': 'ojousama_wa_h_ga_osuki'},
