@@ -310,11 +310,11 @@ class DBExecute:
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 50000 #entre 1000 e 7000
         MULTIPLIER = 50
-        EXTRA_UP = ['21730','3372','10602','2705','3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['21730','3372','10602','2705','34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
-        EXTRA_UP3 = ['21730','3372','10602','2705','34689','10614','49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
-        EXTRA_PLUS = ['3372','10602','2705','14548','2815','2169','3649','5589','3032','49826','8988','10614','34689']
-        EXTRA_ULTRA = ['3372','10602','3032','3649','8988','2169','2815','10614','34689','2705','49826']
+        EXTRA_UP = ['21274','2266','21730','3372','3596','10602','2705','3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['2266','21274','21730','3596','3372','10602','2705','34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
+        EXTRA_UP3 = ['2266','3596','21274','21730','3372','10602','2705','34689','10614','49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
+        EXTRA_PLUS = ['2266','3372','3596','10602','2705','14548','2815','2169','3649','5589','3032','49826','8988','10614','34689']
+        EXTRA_ULTRA = ['3372','3596','2705','10602','3032','3649','8988','2169','2815','10614','34689','2705','49826']
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
@@ -333,7 +333,7 @@ class DBExecute:
             # {'mid': '28137', 'vote': 'up', 'slug': 'mating_with_mother'},
             # {'mid': '39823', 'vote': 'up', 'slug': 'shokurei'},
             # {'mid': '49274', 'vote': 'up', 'slug': 'my_mother_is_my_friends_slave'},
-            {'mid': '20439', 'vote': 'up', 'slug': 'impregnated_mother'},
+            # {'mid': '20439', 'vote': 'up', 'slug': 'impregnated_mother'},
             # BOSSHI
             {'mid': '2705', 'vote': 'up', 'slug': 'ojousama_wa_h_ga_osuki'},
             # MANABE JOUJI
@@ -409,7 +409,7 @@ class DBExecute:
             # {'mid': '3498', 'vote': 'up', 'slug': 'sex_pistols'},
             {'mid': '3032', 'vote': 'up', 'slug': 'pearl_jam'},
             {'mid': '3649', 'vote': 'up', 'slug': 'beach_boy'},
-            # {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
+            {'mid': '3596', 'vote': 'up', 'slug': 'welcome_to_tokoharusou'},
             # {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
             # {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
             # {'mid': '3041', 'vote': 'up', 'slug': 'tower_of_gray'},
@@ -842,7 +842,7 @@ class DBExecute:
                 if UPS_VARIAVEIS < 65000:
                     UPS_VARIAVEIS += MULTIPLIER*4
             if alvo_atual['mid'] in EXTRA_UP3:
-                UPS_VARIAVEIS += MULTIPLIER
+                UPS_VARIAVEIS += MULTIPLIER*100
                 if UPS_VARIAVEIS < 80000:
                     UPS_VARIAVEIS += MULTIPLIER*1000
             if alvo_atual['mid'] in EXTRA_PLUS:
@@ -850,7 +850,7 @@ class DBExecute:
                 if UPS_VARIAVEIS < 200000:
                     UPS_VARIAVEIS += MULTIPLIER*1000
             if alvo_atual['mid'] in EXTRA_ULTRA:
-                UPS_VARIAVEIS += 30000
+                UPS_VARIAVEIS += 40000
                 if UPS_VARIAVEIS < 500000:
                     UPS_VARIAVEIS += MULTIPLIER*10000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
