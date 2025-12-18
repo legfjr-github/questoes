@@ -309,11 +309,12 @@ class DBExecute:
         # --- CONFIGURAÇÕES DO SCRIPT ---
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 50000 #entre 1000 e 7000
-        MULTIPLIER = 20
+        MULTIPLIER = 50
         EXTRA_UP = ['3032','14126','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
         EXTRA_UP2 = ['2169','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
         EXTRA_UP3 = ['49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
         EXTRA_PLUS = ['14548','2815','2169','3649','5589','3032','49826','8988']
+        EXTRA_ULTRA = ['3032','3649','8988','2169','2815']
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
@@ -332,7 +333,7 @@ class DBExecute:
             # {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
             # {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
             # {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
-            # {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
+            {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
             # {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
             # {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
             # {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
@@ -432,7 +433,7 @@ class DBExecute:
             # {'mid': '22361', 'vote': 'up', 'slug': 'osawarisan'},
             # {'mid': '12407', 'vote': 'up', 'slug': 'weather_report_genshiken'},
             # {'mid': '46948', 'vote': 'up', 'slug': 'sweet_hearts_lesson'},
-            # {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
+            {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
             {'mid': '2815', 'vote': 'up', 'slug': 'mai_favorite'},
             # {'mid': '2220', 'vote': 'up', 'slug': 'love_selection'},
             # {'mid': '14126', 'vote': 'up', 'slug': 'hina_project'},#
@@ -818,6 +819,10 @@ class DBExecute:
                 UPS_VARIAVEIS += 30000
                 if UPS_VARIAVEIS < 80000:
                     UPS_VARIAVEIS += MULTIPLIER*1000
+            if alvo_atual['mid'] in EXTRA_ULTRA:
+                UPS_VARIAVEIS += 30000
+                if UPS_VARIAVEIS < 80000:
+                    UPS_VARIAVEIS += MULTIPLIER*10000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
             # Usa ThreadPoolExecutor para gerenciar um pool de threads
             with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
