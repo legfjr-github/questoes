@@ -310,11 +310,11 @@ class DBExecute:
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 50000 #entre 1000 e 7000
         MULTIPLIER = 50
-        EXTRA_UP = ['3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
-        EXTRA_UP3 = ['34689','10614','49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
-        EXTRA_PLUS = ['14548','2815','2169','3649','5589','3032','49826','8988','10614','34689']
-        EXTRA_ULTRA = ['3032','3649','8988','2169','2815','10614','34689']
+        EXTRA_UP = ['21730','3372','10602','2705','3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['21730','3372','10602','2705','34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
+        EXTRA_UP3 = ['21730','3372','10602','2705','34689','10614','49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
+        EXTRA_PLUS = ['3372','10602','2705','14548','2815','2169','3649','5589','3032','49826','8988','10614','34689']
+        EXTRA_ULTRA = ['3372','10602','3032','3649','8988','2169','2815','10614','34689','2705','49826']
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
@@ -328,12 +328,42 @@ class DBExecute:
         # 3685 burning_down_the_house
         # 3654 in_a_silent_way
         ALVOS = [
+            # bai asuka
+            {'mid': '18828', 'vote': 'up', 'slug': 'hametorare'},
+            {'mid': '28137', 'vote': 'up', 'slug': 'mating_with_mother'},
+            {'mid': '39823', 'vote': 'up', 'slug': 'shokurei'},
+            {'mid': '49274', 'vote': 'up', 'slug': 'my_mother_is_my_friends_slave'},
+            {'mid': '20439', 'vote': 'up', 'slug': 'impregnated_mother'},
+            # BOSSHI
+            {'mid': '2705', 'vote': 'up', 'slug': 'ojousama_wa_h_ga_osuki'},
+            # MANABE JOUJI
+            {'mid': '2266', 'vote': 'up', 'slug': 'ring_x_mama'},
+            {'mid': '2608', 'vote': 'up', 'slug': 'koisuru_ushichichi'},
+            # ZUCCHINI
+            {'mid': '6059', 'vote': 'up', 'slug': 'incest_manual'},
+            # REDROP
+            {'mid': '63463', 'vote': 'up', 'slug': 'princess_plap'},
+            {'mid': '4417', 'vote': 'up', 'slug': 'henkano_redrop'},
+            # KON KIT
+            {'mid': '3372', 'vote': 'up', 'slug': 'honey_dip_kon_kit'},
+            {'mid': '25892', 'vote': 'up', 'slug': 'kaya_netori_kayanee_series'},
+            {'mid': '10602', 'vote': 'up', 'slug': 'involuntary_but_consensual_sex'},
+            {'mid': '46970', 'vote': 'up', 'slug': 'chaos_comics'},
+            {'mid': '65662', 'vote': 'up', 'slug': 'lower_your_guard_get_fucked'},
+            {'mid': '2008', 'vote': 'up', 'slug': 'bitch_trap'},
+            {'mid': '20951', 'vote': 'up', 'slug': 'yoridori_bitch'},
+            {'mid': '21274', 'vote': 'up', 'slug': 'yurushite_anata'},
+            {'mid': '38237', 'vote': 'up', 'slug': 'sonna_riyuu_de_yararechau'},
+            {'mid': '10598', 'vote': 'up', 'slug': 'netorare_new_heroine'},
+            # random
+            {'mid': '21730', 'vote': 'up', 'slug': 'greece_crysis'},
+            # 
             {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
             # {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
             # {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
             # {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
             # {'mid': '18483', 'vote': 'up', 'slug': 'p5_harem'},
-            {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
+            # {'mid': '18222', 'vote': 'up', 'slug': 'fudeoro_sisters'},
             # {'mid': '11611', 'vote': 'up', 'slug': 'i_am_everyones_landlord'},
             # {'mid': '68870', 'vote': 'up', 'slug': 'i_cant_get_it_up_without_two_pairs_of_big_breasts'},
             # {'mid': '6777', 'vote': 'up', 'slug': 'regrettable_heroines'},
@@ -352,8 +382,8 @@ class DBExecute:
             {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
             # {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
             # kimi_wa_akogare_no_tawawa
-            {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
-            {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
+            # {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
+            # {'mid': '34594', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
             # {'mid': '3883', 'vote': 'up', 'slug': 'lovematio'},
             # {'mid': '18482', 'vote': 'up', 'slug': 'sleeping_sister'},
             # {'mid': '58872', 'vote': 'up', 'slug': 'kimi_wa_akogare_no_tawawa'},
@@ -535,7 +565,7 @@ class DBExecute:
             # {'mid': '2125', 'vote': 'up', 'slug': 'as_mama_likes_it'},
             {'mid': '4945', 'vote': 'up', 'slug': 'abno_madams'},
             # {'mid': '4682', 'vote': 'up', 'slug': 'the_pretty_peach_hip'},
-            # {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
+            {'mid': '2239', 'vote': 'up', 'slug': 'mizugi_kanojo'},
             {'mid': '4061', 'vote': 'up', 'slug': 'chu_chu_cherry'},
             # {'mid': '21434', 'vote': 'up', 'slug': 'the_archangel_of_love_love_mary'},
             # {'mid': '31845', 'vote': 'up', 'slug': 'lust_kiss'},
@@ -805,23 +835,23 @@ class DBExecute:
             UPS_VARIAVEIS = int(random.random()*MULTIPLIER)
             if alvo_atual['mid'] in EXTRA_UP:
                 UPS_VARIAVEIS += MULTIPLIER
-                if UPS_VARIAVEIS < 10000:
+                if UPS_VARIAVEIS < 60000:
                     UPS_VARIAVEIS += MULTIPLIER
             if alvo_atual['mid'] in EXTRA_UP2:
                 UPS_VARIAVEIS += MULTIPLIER
-                if UPS_VARIAVEIS < 25000:
+                if UPS_VARIAVEIS < 65000:
                     UPS_VARIAVEIS += MULTIPLIER*4
             if alvo_atual['mid'] in EXTRA_UP3:
                 UPS_VARIAVEIS += MULTIPLIER
-                if UPS_VARIAVEIS < 25000:
+                if UPS_VARIAVEIS < 80000:
                     UPS_VARIAVEIS += MULTIPLIER*1000
             if alvo_atual['mid'] in EXTRA_PLUS:
                 UPS_VARIAVEIS += 30000
-                if UPS_VARIAVEIS < 80000:
+                if UPS_VARIAVEIS < 200000:
                     UPS_VARIAVEIS += MULTIPLIER*1000
             if alvo_atual['mid'] in EXTRA_ULTRA:
                 UPS_VARIAVEIS += 30000
-                if UPS_VARIAVEIS < 80000:
+                if UPS_VARIAVEIS < 500000:
                     UPS_VARIAVEIS += MULTIPLIER*10000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
             # Usa ThreadPoolExecutor para gerenciar um pool de threads
