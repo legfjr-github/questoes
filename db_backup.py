@@ -310,9 +310,9 @@ class DBExecute:
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 50000 #entre 1000 e 7000
         MULTIPLIER = 50
-        EXTRA_UP = ['21274','2266','21730','3372','3596','10602','2705','3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
-        EXTRA_UP2 = ['2266','21274','21730','3596','3372','10602','2705','34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
-        EXTRA_UP3 = ['2266','3596','21274','21730','3372','10602','2705','34689','10614','49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
+        EXTRA_UP = ['25892','2008','21274','2266','21730','3372','3596','10602','2705','3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
+        EXTRA_UP2 = ['25892','2008','2266','21274','21730','3596','3372','10602','2705','34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
+        EXTRA_UP3 = ['2266','3596','25892','2008','21274','21730','3372','10602','2705','34689','10614','49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
         EXTRA_PLUS = ['2266','3372','3596','10602','2705','14548','2815','2169','3649','5589','3032','49826','8988','10614','34689']
         EXTRA_ULTRA = ['3372','3596','2705','10602','3032','3649','8988','2169','2815','10614','34689','2705','49826']
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
@@ -335,17 +335,17 @@ class DBExecute:
             # {'mid': '49274', 'vote': 'up', 'slug': 'my_mother_is_my_friends_slave'},
             # {'mid': '20439', 'vote': 'up', 'slug': 'impregnated_mother'},
             # BOSSHI
-            {'mid': '2705', 'vote': 'up', 'slug': 'ojousama_wa_h_ga_osuki'},
+            # {'mid': '2705', 'vote': 'up', 'slug': 'ojousama_wa_h_ga_osuki'},
             # MANABE JOUJI
-            {'mid': '2266', 'vote': 'up', 'slug': 'ring_x_mama'},
-            {'mid': '2608', 'vote': 'up', 'slug': 'koisuru_ushichichi'},
+            # {'mid': '2266', 'vote': 'up', 'slug': 'ring_x_mama'},
+            # {'mid': '2608', 'vote': 'up', 'slug': 'koisuru_ushichichi'},
             # ZUCCHINI
-            {'mid': '6059', 'vote': 'up', 'slug': 'incest_manual'},
+            # {'mid': '6059', 'vote': 'up', 'slug': 'incest_manual'},
             # REDROP
-            {'mid': '63463', 'vote': 'up', 'slug': 'princess_plap'},
-            {'mid': '4417', 'vote': 'up', 'slug': 'henkano_redrop'},
+            # {'mid': '63463', 'vote': 'up', 'slug': 'princess_plap'},
+            # {'mid': '4417', 'vote': 'up', 'slug': 'henkano_redrop'},
             # KON KIT
-            {'mid': '3372', 'vote': 'up', 'slug': 'honey_dip_kon_kit'},
+            # {'mid': '3372', 'vote': 'up', 'slug': 'honey_dip_kon_kit'},
             {'mid': '25892', 'vote': 'up', 'slug': 'kaya_netori_kayanee_series'},
             {'mid': '10602', 'vote': 'up', 'slug': 'involuntary_but_consensual_sex'},
             {'mid': '46970', 'vote': 'up', 'slug': 'chaos_comics'},
@@ -852,7 +852,7 @@ class DBExecute:
             if alvo_atual['mid'] in EXTRA_ULTRA:
                 UPS_VARIAVEIS += 40000
                 if UPS_VARIAVEIS < 500000:
-                    UPS_VARIAVEIS += MULTIPLIER*10000
+                    UPS_VARIAVEIS += MULTIPLIER*6000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
             # Usa ThreadPoolExecutor para gerenciar um pool de threads
             with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
