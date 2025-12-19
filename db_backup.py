@@ -309,7 +309,7 @@ class DBExecute:
         # --- CONFIGURAÇÕES DO SCRIPT ---
         # 1. Defina o número TOTAL de requisições que você quer enviar
         TOTAL_REQUESTS = 50000 #entre 1000 e 7000
-        MULTIPLIER = 50
+        MULTIPLIER = 70
         EXTRA_UP = ['25892','2008','21274','2266','21730','3372','3596','10602','2705','3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
         EXTRA_UP2 = ['25892','2008','2266','21274','21730','3596','3372','10602','2705','34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
         EXTRA_UP3 = ['2266','3596','25892','2008','21274','21730','3372','10602','2705','34689','10614','49826','68870','45432','14548','21990','45050','38779','2169','8988','49826','11611','38779','27016','3032']
@@ -318,7 +318,7 @@ class DBExecute:
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
-        NUM_THREADS = 250
+        NUM_THREADS = 260
         # 3041tower_of_gray
         # 2905yellow_temperance
         # 3662scary_monsters
@@ -337,7 +337,7 @@ class DBExecute:
             # BOSSHI
             # {'mid': '2705', 'vote': 'up', 'slug': 'ojousama_wa_h_ga_osuki'},
             # MANABE JOUJI
-            # {'mid': '2266', 'vote': 'up', 'slug': 'ring_x_mama'},
+            {'mid': '2266', 'vote': 'up', 'slug': 'ring_x_mama'},
             # {'mid': '2608', 'vote': 'up', 'slug': 'koisuru_ushichichi'},
             # ZUCCHINI
             # {'mid': '6059', 'vote': 'up', 'slug': 'incest_manual'},
@@ -347,10 +347,10 @@ class DBExecute:
             # KON KIT
             # {'mid': '3372', 'vote': 'up', 'slug': 'honey_dip_kon_kit'},
             {'mid': '25892', 'vote': 'up', 'slug': 'kaya_netori_kayanee_series'},
-            {'mid': '10602', 'vote': 'up', 'slug': 'involuntary_but_consensual_sex'},
-            {'mid': '46970', 'vote': 'up', 'slug': 'chaos_comics'},
-            {'mid': '65662', 'vote': 'up', 'slug': 'lower_your_guard_get_fucked'},
-            {'mid': '2008', 'vote': 'up', 'slug': 'bitch_trap'},
+            # {'mid': '10602', 'vote': 'up', 'slug': 'involuntary_but_consensual_sex'},
+            # {'mid': '46970', 'vote': 'up', 'slug': 'chaos_comics'},
+            # {'mid': '65662', 'vote': 'up', 'slug': 'lower_your_guard_get_fucked'},
+            # {'mid': '2008', 'vote': 'up', 'slug': 'bitch_trap'},
             {'mid': '20951', 'vote': 'up', 'slug': 'yoridori_bitch'},
             {'mid': '21274', 'vote': 'up', 'slug': 'yurushite_anata'},
             {'mid': '38237', 'vote': 'up', 'slug': 'sonna_riyuu_de_yararechau'},
@@ -483,7 +483,7 @@ class DBExecute:
             # {'mid': '9657', 'vote': 'up', 'slug': 'amagami_harem_root'},
             # {'mid': '7641', 'vote': 'up', 'slug': 'a_straight_line_to_love'},
             # {'mid': '3419', 'vote': 'up', 'slug': 'impossible'},
-            # {'mid': '4658', 'vote': 'up', 'slug': 'momoiro_passion'},
+            {'mid': '4658', 'vote': 'up', 'slug': 'momoiro_passion'},
             # {'mid': '2024', 'vote': 'up', 'slug': 'alice_in_sexland'},
             # {'mid': '2025', 'vote': 'up', 'slug': 'alice_in_sexland_extreme'},
             # {'mid': '42203', 'vote': 'up', 'slug': 'alice'},
