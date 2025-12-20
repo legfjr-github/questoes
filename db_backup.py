@@ -318,7 +318,7 @@ class DBExecute:
         # EXTRA_PLUS_ULTRA = ['14548','2815','2169','3649','5589']
         
         # 2. Defina quantas requisições devem ser executadas SIMULTANEAMENTE (threads)
-        NUM_THREADS = 240
+        NUM_THREADS = 350
         # 3041tower_of_gray
         # 2905yellow_temperance
         # 3662scary_monsters
