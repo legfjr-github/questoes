@@ -337,7 +337,7 @@ class DBExecute:
             # BOSSHI
             # {'mid': '2705', 'vote': 'up', 'slug': 'ojousama_wa_h_ga_osuki'},
             # MANABE JOUJI
-            {'mid': '2266', 'vote': 'up', 'slug': 'ring_x_mama'},
+            # {'mid': '2266', 'vote': 'up', 'slug': 'ring_x_mama'},
             # {'mid': '2608', 'vote': 'up', 'slug': 'koisuru_ushichichi'},
             # ZUCCHINI
             # {'mid': '6059', 'vote': 'up', 'slug': 'incest_manual'},
@@ -346,14 +346,14 @@ class DBExecute:
             # {'mid': '4417', 'vote': 'up', 'slug': 'henkano_redrop'},
             # KON KIT
             # {'mid': '3372', 'vote': 'up', 'slug': 'honey_dip_kon_kit'},
-            {'mid': '25892', 'vote': 'up', 'slug': 'kaya_netori_kayanee_series'},
+            # {'mid': '25892', 'vote': 'up', 'slug': 'kaya_netori_kayanee_series'},
             # {'mid': '10602', 'vote': 'up', 'slug': 'involuntary_but_consensual_sex'},
             # {'mid': '46970', 'vote': 'up', 'slug': 'chaos_comics'},
             # {'mid': '65662', 'vote': 'up', 'slug': 'lower_your_guard_get_fucked'},
             # {'mid': '2008', 'vote': 'up', 'slug': 'bitch_trap'},
-            {'mid': '20951', 'vote': 'up', 'slug': 'yoridori_bitch'},
-            {'mid': '21274', 'vote': 'up', 'slug': 'yurushite_anata'},
-            {'mid': '38237', 'vote': 'up', 'slug': 'sonna_riyuu_de_yararechau'},
+            # {'mid': '20951', 'vote': 'up', 'slug': 'yoridori_bitch'},
+            # {'mid': '21274', 'vote': 'up', 'slug': 'yurushite_anata'},
+            # {'mid': '38237', 'vote': 'up', 'slug': 'sonna_riyuu_de_yararechau'},
             {'mid': '10598', 'vote': 'up', 'slug': 'netorare_new_heroine'},
             # random
             {'mid': '21730', 'vote': 'up', 'slug': 'greece_crysis'},
