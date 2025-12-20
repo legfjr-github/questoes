@@ -794,7 +794,7 @@ class DBExecute:
         
             try:
                 # tempo entre 15 e 15 segundos, 1 mais um random entre 0 e 5
-                tempo = 0.1 + random.random()
+                tempo = 0.1 + random.random()/10
                 time.sleep(tempo)
                 response = requests.post(URL, headers=HEADERS, cookies=COOKIES, data=data)
                 response.raise_for_status()  # Levanta um erro para status HTTP 4xx ou 5xx
