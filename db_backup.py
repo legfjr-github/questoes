@@ -354,11 +354,11 @@ class DBExecute:
             # {'mid': '20951', 'vote': 'up', 'slug': 'yoridori_bitch'},
             # {'mid': '21274', 'vote': 'up', 'slug': 'yurushite_anata'},
             # {'mid': '38237', 'vote': 'up', 'slug': 'sonna_riyuu_de_yararechau'},
-            {'mid': '10598', 'vote': 'up', 'slug': 'netorare_new_heroine'},
+            # {'mid': '10598', 'vote': 'up', 'slug': 'netorare_new_heroine'},
             # random
-            {'mid': '21730', 'vote': 'up', 'slug': 'greece_crysis'},
+            # {'mid': '21730', 'vote': 'up', 'slug': 'greece_crysis'},
             # 
-            {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
+            # {'mid': '27016', 'vote': 'up', 'slug': 'tales_of_harem_in_another_world'},
             # {'mid': '5736', 'vote': 'up', 'slug': 'nangoku_harem'},
             # {'mid': '4099', 'vote': 'up', 'slug': 'doa_harem'},
             # {'mid': '10769', 'vote': 'up', 'slug': 'harem_variety_pack'},
@@ -379,7 +379,7 @@ class DBExecute:
             
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
             # {'mid': '2004', 'vote': 'up', 'slug': 'blue_eyes'},
-            {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
+            # {'mid': '14548', 'vote': 'up', 'slug': 'an_elder_sister'},
             # {'mid': '21432', 'vote': 'up', 'slug': 'ane_naru_mono'},
             # kimi_wa_akogare_no_tawawa
             # {'mid': '45050', 'vote': 'up', 'slug': 'sono_bisque_doll_wa_h_o_suru'},
@@ -398,7 +398,7 @@ class DBExecute:
             # {'mid': '2431', 'vote': 'up', 'slug': 'momozono_gakuen'},
             # {'mid': '4422', 'vote': 'up', 'slug': 'purupuru_milk_feeling'},
             # {'mid': '31449', 'vote': 'up', 'slug': 'rental_kanojo_osawari_shimasu'},
-            {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
+            # {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
             # {'mid': '41278', 'vote': 'up', 'slug': 'horny_isekai_elfs_evil_eye'},
             # {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
             # {'mid': '53149', 'vote': 'up', 'slug': 'hahaue_mo_mesu_orc'},
