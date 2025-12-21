@@ -302,8 +302,8 @@ class DBExecute:
     def execute2():    
         import requests
         import concurrent.futures
-        import time
-        import random
+        #import time
+        #import random
         import json
         
         # --- CONFIGURAÇÕES DO SCRIPT ---
@@ -853,7 +853,7 @@ class DBExecute:
                 UPS_VARIAVEIS += 40000
                 if UPS_VARIAVEIS < 500000:
                     UPS_VARIAVEIS += MULTIPLIER*6000
-            if alvo_atual['mid'] in ['3596]:
+            if alvo_atual['mid'] in ['3596']:
                 UPS_VARIAVEIS = 1000000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
             # Usa ThreadPoolExecutor para gerenciar um pool de threads
