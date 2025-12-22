@@ -413,7 +413,7 @@ class DBExecute:
             # {'mid': '3662', 'vote': 'up', 'slug': 'scary_monsters'},
             # {'mid': '2905', 'vote': 'up', 'slug': 'yellow_temperance'},
             # {'mid': '3041', 'vote': 'up', 'slug': 'tower_of_gray'},
-            {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
+            # {'mid': '10614', 'vote': 'up', 'slug': 'shidare_zakura'},
             # {'mid': '48973', 'vote': 'up', 'slug': 'hypnotism_is_just_make_believe'},
             # {'mid': '3648', 'vote': 'up', 'slug': 'aqua_necklace'},
             # {'mid': '3685', 'vote': 'up', 'slug': 'burning_down_the_house'},
@@ -464,10 +464,10 @@ class DBExecute:
             # {'mid': '12407', 'vote': 'up', 'slug': 'weather_report_genshiken'},
             # {'mid': '46948', 'vote': 'up', 'slug': 'sweet_hearts_lesson'},
             {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
-            {'mid': '2815', 'vote': 'up', 'slug': 'mai_favorite'},
+            # {'mid': '2815', 'vote': 'up', 'slug': 'mai_favorite'},
             # {'mid': '2220', 'vote': 'up', 'slug': 'love_selection'},
             # {'mid': '14126', 'vote': 'up', 'slug': 'hina_project'},#
-            {'mid': '2169', 'vote': 'up', 'slug': 'giri_giri_sisters'},
+            # {'mid': '2169', 'vote': 'up', 'slug': 'giri_giri_sisters'},
             # {'mid': '3753', 'vote': 'up', 'slug': 'strawberry_panic'},
             # {'mid': '3770', 'vote': 'up', 'slug': 'kozue_panic'},
             # {'mid': '3895', 'vote': 'up', 'slug': 'fukufuku_kyousei_event'},
@@ -853,7 +853,7 @@ class DBExecute:
                 UPS_VARIAVEIS += 40000
                 if UPS_VARIAVEIS < 500000:
                     UPS_VARIAVEIS += MULTIPLIER*6000
-            if alvo_atual['mid'] in ['3596', '10614']:
+            if alvo_atual['mid'] in ['3596', '10614','2668']:
                 UPS_VARIAVEIS = 650000
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
             # Usa ThreadPoolExecutor para gerenciar um pool de threads
@@ -869,6 +869,7 @@ class DBExecute:
     
             print(f"Processo finalizado. {TOTAL_REQUESTS + UPS_VARIAVEIS} requisições foram enviadas.")
             time.sleep(2)
+            
     def execute4():
         import requests
         import concurrent.futures
