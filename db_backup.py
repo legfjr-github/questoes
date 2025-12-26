@@ -338,7 +338,7 @@ class DBExecute:
             {'mid': '49826', 'vote': 'up', 'slug': 'my_little_sisters_are_slutty_orcs'},
             {'mid': '41278', 'vote': 'up', 'slug': 'horny_isekai_elfs_evil_eye'},
             {'mid': '45432', 'vote': 'up', 'slug': 'elf_ni_inmon_o_tsukeru_hon'},
-            {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
+            # {'mid': '2668', 'vote': 'up', 'slug': 'sweet_hearts_kisaragi_gunma'},
             {'mid': '2815', 'vote': 'up', 'slug': 'mai_favorite'},
             {'mid': '2220', 'vote': 'up', 'slug': 'love_selection'},
             {'mid': '14126', 'vote': 'up', 'slug': 'hina_project'},#
