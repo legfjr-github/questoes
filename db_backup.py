@@ -308,7 +308,7 @@ class DBExecute:
         
         # --- CONFIGURAÇÕES DO SCRIPT ---
         # 1. Defina o número TOTAL de requisições que você quer enviar
-        TOTAL_REQUESTS = 5000 #entre 1000 e 7000
+        TOTAL_REQUESTS = 2000 #entre 1000 e 7000
         MULTIPLIER = 0
         EXTRA_UP = ['25892','2008','21274','2266','21730','3372','3596','10602','2705','3032','34689','14126','10614','2169','2184','2815','4195','10507','2630','2058','3252','4061','4757','3799','49826','41278','45432','53149','2004']
         EXTRA_UP2 = ['25892','2008','2266','21274','21730','3596','3372','10602','2705','34689','2169','10614','8988','2815','3799','4195','3252','49826','41278','45432','53149','2004','68870','11611','3032']
@@ -858,8 +858,8 @@ class DBExecute:
                 UPS_VARIAVEIS += 40000
                 if UPS_VARIAVEIS < 500000:
                     UPS_VARIAVEIS += MULTIPLIER*6000
-            if alvo_atual['mid'] in ['3032','2815','2169','3596', '10614','2668']:
-                UPS_VARIAVEIS = 10000
+            if alvo_atual['mid'] in ['45050','3032','2815','2169','3596', '10614','2668','14548']:
+                UPS_VARIAVEIS = 12003
             else:
                 UPS_VARIAVEIS = 10
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
