@@ -858,10 +858,10 @@ class DBExecute:
                 UPS_VARIAVEIS += 40000
                 if UPS_VARIAVEIS < 500000:
                     UPS_VARIAVEIS += MULTIPLIER*6000
-            if alvo_atual['mid'] in ['45050','8988','3032','2815','2169','3596', '10614','2668','14548','4061','2239','5589','4029']:
+            if alvo_atual['mid'] in ['45432','45050','8988','3032','2815','2169','3596', '10614','2668','14548','4061','2239','5589','4029']:
                 UPS_VARIAVEIS = 15000
-                if alvo_atual['mid'] in ['3596']:
-                    UPS_VARIAVEIS += 11234
+                if alvo_atual['mid'] in ['45432','2169','45050']:
+                    UPS_VARIAVEIS += 20234
             else:
                 UPS_VARIAVEIS = 10
             print(f"Likes variaveis para o alvo {alvo_atual["slug"]}: {UPS_VARIAVEIS}")
